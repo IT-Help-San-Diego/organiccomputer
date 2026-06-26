@@ -28,15 +28,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
-      # Static site: nothing to build. Guard against accidental script bloat —
-      # the CSP enforces script-src 'none', so any <script> would break in prod.
-      - name: Guard — no <script> tags (CSP script-src 'none')
+      # Static site: nothing to build. Guard against accidental executable JS —
+      # the CSP enforces script-src 'none'. JSON-LD (<script type="application/ld+json">)
+      # is INERT DATA, not executable script: CSP script-src does not block it and
+      # browsers never execute it. So we allow ld+json data blocks but reject any
+      # executable <script> (no type, or any type other than application/ld+json).
+      - name: Guard — no executable <script> (CSP script-src 'none'); allow ld+json data
         run: |
-          if grep -rIl --include='*.html' '<script' .; then
-            echo "::error::Found <script> tag(s); CSP forbids scripts on this site."
+          # Find every <script ...> opening tag; fail if any is NOT an ld+json data block.
+          if grep -rIohE '<script[^>]*>' --include='*.html' . \
+             | grep -viE '<script[[:space:]]+type="application/ld\+json">' \
+             | grep -q .; then
+            echo "::error::Found executable <script> tag(s); only <script type=\"application/ld+json\"> data blocks are allowed (CSP script-src 'none')."
+            grep -rInoE '<script[^>]*>' --include='*.html' . \
+              | grep -viE '<script[[:space:]]+type="application/ld\+json">' || true
             exit 1
           fi
-          echo "OK — no script tags."
+          echo "OK — no executable scripts (ld+json data blocks permitted)."
 
       - name: Guard — no external subresources
         # Outbound <a href> links are fine; subresource refs (src/href on
@@ -70,7 +78,7 @@ jobs:
             --exclude ".git/*" --exclude ".github/*" --exclude "infra/*" \
             --exclude "*.md" --exclude ".gitignore" --exclude ".gitattributes" \
             --exclude ".DS_Store" --exclude "**/.DS_Store" \
-            --exclude "*.html" --exclude "*.txt" --exclude ".well-known/*" \
+            --exclude "*.html" --exclude "*.txt" --exclude "*.xml" --exclude ".well-known/*" \
             --cache-control "public,max-age=31536000,immutable" \
             --metadata-directive REPLACE --delete
 
@@ -93,6 +101,12 @@ jobs:
             aws s3 cp .well-known/security.txt "s3://$BUCKET/.well-known/security.txt" \
               --content-type "text/plain; charset=utf-8" \
               --cache-control "public,max-age=86400" \
+              --metadata-directive REPLACE
+          fi
+          if [ -f sitemap.xml ]; then
+            aws s3 cp sitemap.xml "s3://$BUCKET/sitemap.xml" \
+              --content-type "application/xml; charset=utf-8" \
+              --cache-control "public,max-age=3600,stale-while-revalidate=86400" \
               --metadata-directive REPLACE
           fi
 
