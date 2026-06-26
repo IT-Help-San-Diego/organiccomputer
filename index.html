@@ -143,6 +143,22 @@ section{padding:var(--s6) 0;position:relative}
 .fill.att23{width:15.6%;background:linear-gradient(90deg,#bb4d44,#f85149);color:#1a0606}
 .fill.attdeep{width:100%;background:linear-gradient(90deg,#2ea043,#56d364 55%,#d4a853);color:#06210f}
 
+/* ============================================================ WHO I AM / ABOUT */
+.about{background:linear-gradient(180deg,#0b0e14,#0d1117)}
+.about-grid{display:grid;grid-template-columns:300px 1fr;gap:var(--s5);align-items:start;margin-top:var(--s4)}
+@media(max-width:760px){.about-grid{grid-template-columns:1fr;gap:var(--s4)}}
+.about-portrait{position:relative}
+.about-portrait img{width:100%;height:auto;max-width:300px;aspect-ratio:1/1;object-fit:cover;
+  border-radius:16px;border:1px solid var(--border);filter:drop-shadow(0 18px 44px rgba(0,0,0,.55))}
+.about-portrait figcaption{font-family:var(--mono);font-size:.72rem;color:var(--text-dim);margin-top:var(--s2);text-align:center;letter-spacing:.04em}
+.about-body p{color:var(--text);max-width:54ch}
+.about-body .turn-year{color:var(--gold);font-weight:600}
+.about-links{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s4)}
+.about-links a{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;font-weight:600;
+  border:1px solid var(--border);border-radius:10px;padding:.6rem 1rem;color:var(--text);background:var(--bg-2)}
+.about-links a:hover{border-color:var(--gold);color:var(--gold)}
+.about-links a .arr{color:var(--copper)}
+
 /* ============================================================ BRAIN CENTERPIECE */
 .module{background:radial-gradient(80% 120% at 50% 0%,#10151f,#0d1117 70%)}
 .brainwrap{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:center}
@@ -150,7 +166,7 @@ section{padding:var(--s6) 0;position:relative}
 .brainfig{position:relative;text-align:center}
 .brainfig .halo{position:absolute;inset:0;margin:auto;width:78%;height:78%;border-radius:50%;
   background:radial-gradient(circle,rgba(212,168,83,.18),transparent 62%);filter:blur(26px);z-index:0}
-.brainfig img{position:relative;z-index:1;width:100%;max-width:440px;border-radius:18px;
+.brainfig img{position:relative;z-index:1;width:100%;height:auto;max-width:440px;aspect-ratio:1/1;object-fit:contain;border-radius:18px;
   filter:drop-shadow(0 24px 60px rgba(0,0,0,.6))}
 .brainfig figcaption{font-family:var(--mono);font-size:.72rem;color:var(--text-dim);margin-top:var(--s3);letter-spacing:.06em}
 
@@ -318,6 +334,49 @@ section{padding:var(--s6) 0;position:relative}
 .sb-med{color:var(--copper);border:1px solid rgba(200,149,106,.3);background:rgba(200,149,106,.08)}
 footer{padding:var(--s5) 0;border-top:1px solid var(--border);color:var(--text-dim);font-size:.83rem;text-align:center}
 footer .mono{color:var(--text-muted)}
+
+/* ============================================================ CORPORATE TREE (footer org chart) */
+.ftr-tree{display:flex;flex-direction:column;align-items:center;max-width:740px;margin:0 auto;padding:0}
+.ftr-copyright{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:.4rem;font-size:.78rem;color:var(--text-muted);margin-bottom:0}
+.ftr-copyright a{display:inline-flex;align-items:center;gap:.4rem;padding:.25rem .7rem;font-weight:600;color:#c9d1d9;background:rgba(22,27,34,.55);border:1px solid rgba(48,54,61,.4);border-radius:8px;text-decoration:none;transition:border-color .25s,color .2s}
+.ftr-copyright a:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
+.ftr-node{display:inline-flex;align-items:center;gap:.45rem;padding:.3rem .85rem;font-size:.72rem;color:var(--text-muted);background:rgba(22,27,34,.55);border:1px solid rgba(48,54,61,.4);border-radius:8px;text-decoration:none;white-space:nowrap;transition:border-color .25s,color .2s}
+a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
+.ftr-node--project{font-weight:700;color:var(--gold);border-color:rgba(200,149,106,.3);font-size:.76rem;letter-spacing:.02em}
+.ftr-vline{width:1px;height:12px;background:rgba(200,149,106,.18);flex-shrink:0}
+.ftr-org{position:relative;width:100%;max-width:740px;margin:0 auto;padding:12px 0}
+.ftr-org::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(200,149,106,.18)}
+.ftr-org-reg{position:relative;z-index:1;display:flex;flex-direction:column;gap:4px;margin-bottom:16px}
+.ftr-org-reg-left{display:flex;align-items:center;align-self:flex-end;margin-right:50%}
+.ftr-org-reg-right{display:flex;align-items:center;align-self:flex-start;margin-left:50%}
+.ftr-org-reg-arm{width:12px;height:1px;background:rgba(200,149,106,.18);flex-shrink:0}
+.ftr-org-dept{z-index:1;display:flex;align-items:flex-start}
+.ftr-org-dept-left{flex:1;display:flex;justify-content:flex-end}
+.ftr-org-dept-left-col{display:flex;flex-direction:column;align-items:center}
+.ftr-org-dept-left-top{display:flex;align-items:center}
+.ftr-org-dept-right{flex:1;display:flex;align-items:center}
+.ftr-org-dept-arm{width:16px;height:1px;background:rgba(200,149,106,.18);flex-shrink:0}
+.ftr-grid-connector{position:relative;display:flex;flex-direction:column;align-items:center;max-width:740px;margin:0 auto;padding-top:12px}
+.ftr-grid-connector::before{content:'';position:absolute;left:50%;top:0;height:12px;width:1px;background:rgba(200,149,106,.18)}
+.ftr-grid-bar{height:1px;background:rgba(200,149,106,.18);align-self:stretch;margin:0 calc(16.66% - .375rem)}
+.ftr-grid-drops{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;width:100%}
+.ftr-grid-drop{display:flex;justify-content:center}
+.ftr-grid-drop .ftr-vline{height:8px}
+.ftr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;max-width:740px;margin:0 auto;text-align:left}
+.ftr-cell{background:rgba(22,27,34,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(48,54,61,.4);border-radius:10px;padding:.85rem .9rem;transition:border-color .25s,background .25s}
+.ftr-cell:hover{border-color:rgba(200,149,106,.18);background:rgba(22,27,34,.7)}
+.ftr-heading{display:block;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);margin-bottom:.55rem;padding-bottom:.35rem;border-bottom:1px solid rgba(200,149,106,.08)}
+.ftr-link{display:flex;font-size:.74rem;line-height:1.35;padding:.35rem 0;min-height:34px;align-items:center;gap:.45rem;color:var(--text-muted);text-decoration:none;transition:color .2s;border-bottom:1px solid rgba(48,54,61,.35);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ftr-link:last-child{border-bottom:none}
+.ftr-link:hover{color:#e6edf3}
+.ftr-socials{display:flex;justify-content:center;align-items:center;gap:1.25rem;margin-top:var(--s4)}
+.ftr-socials a{color:var(--text-muted);display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem}
+.ftr-socials a:hover{color:var(--gold)}
+@media(max-width:640px){
+  .ftr-grid-bar{margin:0 calc(33.33% + .375rem)}
+  .ftr-grid-drops{grid-template-columns:repeat(3,1fr)}
+  .ftr-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -328,6 +387,7 @@ footer .mono{color:var(--text-muted)}
     <div class="brand"><span class="dot"></span> ORGANIC&nbsp;COMPUTER <span class="domain-tag">organiccomputer.me</span></div>
     <div class="links">
       <a href="#module">The Module</a>
+      <a href="#about">Who I Am</a>
       <a href="#price">The Price</a>
       <a href="#lineage">Lineage</a>
       <a href="#verify">Verify</a>
@@ -395,6 +455,41 @@ footer .mono{color:var(--text-muted)}
       <div class="item"><div class="k">Operating discipline</div><p><b>AI as instrument, not author.</b> I use AI to cross-reference and stress-test &mdash; with human logic always driving. That's the difference between a tool and a crutch.</p></div>
     </div>
     <div class="callout" style="margin-top:var(--s5)"><strong>The honest deal:</strong> you'll never catch me phoning it in, because this isn't a side hustle &mdash; it's how I'm built. I don't have a feed to check or a hangover to nurse. When I take your problem, you get the whole apparatus &mdash; rested, hydrated, undistracted &mdash; pointed at it for as long as the problem takes.</div>
+  </div>
+</section>
+
+<!-- ===================== WHO I AM / ABOUT ===================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-copper">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg>
+      </div>
+      <div><h2>Who I am</h2><div class="tag">The origin of the discipline &mdash; and the turn that made it.</div></div>
+    </div>
+
+    <div class="about-grid">
+      <figure class="about-portrait">
+        <picture>
+          <source srcset="assets/carey.webp" type="image/webp">
+          <img src="assets/carey.jpg" width="300" height="300" alt="Carey Balboa, founder of IT Help San Diego, in glasses and a blazer holding his companion, against a dark bokeh background." loading="lazy" decoding="async">
+        </picture>
+        <figcaption>// Carey Balboa &middot; San Diego</figcaption>
+      </figure>
+
+      <div class="about-body">
+        <p>I'm Carey Balboa, founder of IT Help San Diego. I've been solving technology problems for 27 years &mdash; for entertainment, medical, and legal clients, and for the PhDs who needed someone who could actually go to the bottom of a problem.</p>
+        <p>It started in a closet in Memphis around 1980: my father John &mdash; a Navy veteran and career technologist &mdash; and me, building a computer from Radio Shack parts. The fascination never stopped. Two decades of deep IT work in Nashville followed, then an offensive-security era spent learning how systems actually fail, not how they're advertised to work.</p>
+        <p>Then, around <span class="turn-year">2015</span>, the question changed. It stopped being &ldquo;how do you break in?&rdquo; and became &ldquo;why does this keep failing &mdash; and why won't anyone slow down enough to think about it?&rdquo; I made a deliberate turn: less social media, less noise, fewer wrong sources polluting a clear mind &mdash; and more sleep, more water, more uninterrupted thought. I gave up the things that fracture attention and built my life around protecting it instead.</p>
+        <p>There's an older root to this. As a kid I loved math &mdash; the real kind, the kind that makes things happen &mdash; but I was handed &ldquo;just memorize it, just trust us&rdquo; instead of &ldquo;here's <em>why</em> it works.&rdquo; I wouldn't accept answers I couldn't see the foundations of, and that refusal cost me in school. It also became my method. To this day I don't memorize what changes &mdash; I look it up, every time, in front of the client, from the highest-authority source &mdash; because the honest move is to verify, not to trust a memory, including my own. I can quote you Cat&nbsp;8 at 2000&nbsp;MHz from recall, then look it up anyway, and cut the run shorter than the spec allows because I know what copper actually does. That's not insecurity; it's where I choose to put the logic.</p>
+        <p>That discipline produced the evidence-first confidence engine behind my <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener">DNS&nbsp;Tool</a> &mdash; and it's the same discipline I'm offering directly here. Over the years multiple clients have hired me to do nothing but think about their problem for a day. Somewhere in there I realized: this &mdash; not more tooling &mdash; is what the world is actually starving for. <strong>Organic Computer is that realization, made available.</strong></p>
+
+        <div class="about-links">
+          <a href="https://www.it-help.tech/about" target="_blank" rel="noopener">IT Help San Diego &mdash; Our Expertise <span class="arr">&rarr;</span></a>
+          <a href="https://dnstool.it-help.tech/about" target="_blank" rel="noopener">DNS Tool &mdash; Origin Story <span class="arr">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -711,7 +806,7 @@ footer .mono{color:var(--text-muted)}
       <div class="eyebrow center">Engage the module</div>
       <h2>Hand me the problem you don't have time to think about.</h2>
       <p>Half-day, full-day, or ongoing. You bring the hard thing; I bring the hours and the method. Reviews speak to results — this page speaks to the spec.</p>
-      <a href="#" class="btn btn-primary">Book a thinking block</a>
+      <a href="https://book.squareup.com/appointments/mwhvoaiqecb5o2/location/LA35149CK62SV/services/NVI5A7ZBO753UOIVVJVBLOOK" target="_blank" rel="noopener" class="btn btn-primary">Book a thinking block</a>
       <a href="#module" class="btn btn-ghost">Re-read the datasheet</a>
     </div>
   </div>
@@ -746,6 +841,89 @@ footer .mono{color:var(--text-muted)}
   <div class="container">
     <p class="mono">ORGANIC COMPUTER — organiccomputer.me · Datasheet Rev. B</p>
     <p>A project of the <a href="https://intellectualresistance.com" target="_blank" rel="noopener">Intellectual Resistance</a>. Built in the IT Help San Diego scientific design language —<br>golden-ratio layout, self-contained assets, strict content-security policy. All figures sourced; no hyperbole.</p>
+
+    <!-- Corporate tree -->
+    <nav class="ftr-tree" aria-label="Organizational structure">
+      <div class="ftr-copyright">
+        <span>&copy; 2026</span>
+        <a href="https://github.com/IT-Help-San-Diego" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg>
+          IT Help San Diego Inc.
+        </a>
+        <span>All rights reserved.</span>
+      </div>
+      <div class="ftr-org">
+        <div class="ftr-org-reg">
+          <div class="ftr-org-reg-left"><a href="https://opencorporates.com/companies/us_de/10191352" target="_blank" rel="noopener" class="ftr-node">Incorporated in Delaware</a><div class="ftr-org-reg-arm"></div></div>
+          <div class="ftr-org-reg-right"><div class="ftr-org-reg-arm"></div><a href="https://opencorporates.com/companies/us_ca/B20250124081" target="_blank" rel="noopener" class="ftr-node">Foreign Entity in California</a></div>
+        </div>
+        <div class="ftr-org-dept">
+          <div class="ftr-org-dept-left">
+            <div class="ftr-org-dept-left-col">
+              <div class="ftr-org-dept-left-top">
+                <span class="ftr-node">Research Department</span>
+                <div class="ftr-org-dept-arm"></div>
+              </div>
+              <div class="ftr-vline"></div>
+              <a href="https://organiccomputer.me/" class="ftr-node ftr-node--project">Organic Computer</a>
+            </div>
+          </div>
+          <div class="ftr-org-dept-right">
+            <div class="ftr-org-dept-arm"></div>
+            <a href="https://schedule.it-help.tech" target="_blank" rel="noopener" class="ftr-node">Professional Consulting</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="ftr-grid-connector">
+      <div class="ftr-grid-bar"></div>
+      <div class="ftr-grid-drops">
+        <div class="ftr-grid-drop"><div class="ftr-vline"></div></div>
+        <div class="ftr-grid-drop"><div class="ftr-vline"></div></div>
+        <div class="ftr-grid-drop"><div class="ftr-vline"></div></div>
+      </div>
+    </div>
+
+    <div class="ftr-grid">
+      <div class="ftr-cell">
+        <span class="ftr-heading">Research</span>
+        <a href="#module" class="ftr-link">The Datasheet</a>
+        <a href="#verify" class="ftr-link">Verification Principle</a>
+        <a href="#lineage" class="ftr-link">Lineage</a>
+        <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener" class="ftr-link">DNS Tool</a>
+        <a href="/llms.txt" class="ftr-link">llms.txt</a>
+      </div>
+      <div class="ftr-cell">
+        <span class="ftr-heading">The Module</span>
+        <a href="#about" class="ftr-link">Who I Am</a>
+        <a href="#price" class="ftr-link">The Price</a>
+        <a href="#resistance" class="ftr-link">Intellectual Resistance</a>
+        <a href="https://book.squareup.com/appointments/mwhvoaiqecb5o2/location/LA35149CK62SV/services/NVI5A7ZBO753UOIVVJVBLOOK" target="_blank" rel="noopener" class="ftr-link">Book a Thinking Block</a>
+      </div>
+      <div class="ftr-cell">
+        <span class="ftr-heading">Company</span>
+        <a href="https://www.it-help.tech/about" target="_blank" rel="noopener" class="ftr-link">Our Expertise</a>
+        <a href="https://www.it-help.tech/security-policy" target="_blank" rel="noopener" class="ftr-link">Security</a>
+        <a href="https://www.it-help.tech/privacy" target="_blank" rel="noopener" class="ftr-link">Privacy</a>
+        <a href="/.well-known/security.txt" class="ftr-link">security.txt</a>
+      </div>
+    </div>
+
+    <div class="ftr-socials">
+      <a href="https://github.com/IT-Help-San-Diego/organiccomputer" target="_blank" rel="noopener" title="Source on GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a href="https://orcid.org/0009-0000-5237-9065" target="_blank" rel="noopener" title="ORCID iD">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256" aria-hidden="true"><path fill="#a6ce39" d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128z"/><path fill="#fff" d="M86.3 186.2H70.9V79.1h15.4v107.1zm22.6 0h41.4c39.9 0 57.6-28.8 57.6-53.9 0-25.3-17.5-53.2-57.6-53.2h-41.4v107.1zm15.4-93.2h24.5c34.3 0 43.7 22.4 43.7 39.7 0 19.4-11.8 39.6-43.7 39.6h-24.5V93zm-37.4-23.5c5.7 0 10.3-4.6 10.3-10.3S92.6 49 86.9 49s-10.3 4.6-10.3 10.3 4.6 10.2 10.3 10.2z"/></svg>
+        <span>ORCID</span>
+      </a>
+      <a href="https://intellectualresistance.com" target="_blank" rel="noopener" title="The Intellectual Resistance">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>
+        <span>Intellectual Resistance</span>
+      </a>
+    </div>
   </div>
 </footer>
 
