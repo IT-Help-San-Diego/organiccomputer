@@ -2,11 +2,6 @@
   "Name": "organiccomputer-security-headers",
   "Comment": "Strict security headers for organiccomputer.me — static site, zero scripts, no email. A+/Observatory target.",
   "SecurityHeadersConfig": {
-    "XSSProtection": {
-      "Protection": true,
-      "ModeBlock": true,
-      "Override": true
-    },
     "FrameOptions": {
       "FrameOption": "DENY",
       "Override": true
@@ -50,8 +45,13 @@
         "Header": "Cross-Origin-Embedder-Policy",
         "Value": "credentialless",
         "Override": true
+      },
+      {
+        "Header": "X-Permitted-Cross-Domain-Policies",
+        "Value": "none",
+        "Override": true
       }
     ],
-    "Quantity": 4
+    "Quantity": 5
   }
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
@@ -51,8 +51,8 @@
   --border:#30363d;
   --border-soft:#21262d;
   --text:rgba(230,237,243,0.92);
-  --text-muted:#8b949e;
-  --text-dim:#6e7681;
+  --text-muted:#9aa4ae;
+  --text-dim:#828c96;
   --copper:#c8956a;
   --gold:#d4a853;
   --amber:#ffc000;
@@ -74,8 +74,10 @@ body{
 /* readable column near golden ratio of the 1080 shell */
 .container{width:100%;max-width:1080px;margin:0 auto;padding:0 var(--s4)}
 .narrow{max-width:667px}            /* 1080 / φ */
-a{color:var(--copper);text-decoration:none;transition:color .15s ease}
+a{color:var(--copper);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;transition:color .15s ease}
 a:hover{color:var(--gold)}
+/* structural links are distinguished by layout/box, not color — no underline needed */
+nav a,.btn,.links a,.ftr-copyright a,.ftr-node,.ftr-link,.ftr-socials a,.about-links a,.section-icon a{text-decoration:none}
 h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.15;margin:0 0 var(--s2);letter-spacing:-.02em}
 p{margin:0 0 var(--s3)}
 sup a{color:var(--info);font-size:.62em;font-weight:700;padding:0 .1em}
