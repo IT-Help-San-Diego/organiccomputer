@@ -101,13 +101,29 @@ sup a{color:var(--info);font-size:.62em;font-weight:700;padding:0 .1em}
 .hero .turn{margin-top:var(--s4);font-size:1.08rem;color:var(--text);max-width:52ch;border-left:3px solid var(--gold);padding-left:var(--s3)}
 .hero .turn b{color:var(--gold);font-weight:600}
 
-/* stat trio */
-.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);margin-top:var(--s6)}
-.stat{background:var(--bg-glass);border:1px solid var(--border);border-radius:14px;padding:var(--s4) var(--s4) var(--s3);backdrop-filter:blur(4px)}
-.stat .num{font-family:var(--mono);font-size:clamp(1.4rem,3vw,2rem);font-weight:600;color:var(--gold);letter-spacing:-.01em}
-.stat .num.green{color:var(--success)} .stat .num.blue{color:var(--info)}
-.stat .label{font-size:.82rem;color:var(--text-muted);margin-top:var(--s2)}
-@media(max-width:720px){.stat-row{grid-template-columns:1fr}}
+/* hero spec readout: brain + human specs, datasheet-style */
+.specsheet{display:grid;grid-template-columns:0.85fr 1.15fr;gap:var(--s5);align-items:center;margin-top:var(--s6);
+  background:var(--bg-glass);border:1px solid var(--border);border-radius:18px;padding:var(--s5);backdrop-filter:blur(4px)}
+.specsheet .ss-brain{position:relative;text-align:center}
+.specsheet .ss-brain img{width:100%;height:auto;max-width:240px;aspect-ratio:1/1;object-fit:contain;border-radius:14px;
+  filter:drop-shadow(0 18px 48px rgba(0,0,0,.6))}
+.specsheet .ss-brain .ss-halo{position:absolute;inset:0;margin:auto;width:64%;height:64%;border-radius:50%;
+  background:radial-gradient(circle,rgba(212,168,83,.16),transparent 62%);filter:blur(24px);z-index:0}
+.specsheet .ss-brain img{position:relative;z-index:1}
+.specsheet .ss-specs{min-width:0}
+.ss-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s2);
+  border-bottom:1px solid rgba(200,149,106,.2);padding-bottom:var(--s2);margin-bottom:var(--s2)}
+.ss-head .unit{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.ss-head .part{font-family:var(--mono);font-size:.66rem;color:var(--text-dim)}
+.ss-line{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:var(--s3);
+  padding:var(--s3) 0;border-bottom:1px solid rgba(48,54,61,.5)}
+.ss-line:last-child{border-bottom:none}
+.ss-line .ss-k{font-size:.82rem;color:var(--text-muted)}
+.ss-line .ss-k .sub{display:block;font-size:.72rem;color:var(--text-dim);margin-top:.15rem}
+.ss-line .ss-v{font-family:var(--mono);font-size:clamp(1.25rem,2.4vw,1.7rem);font-weight:600;color:var(--gold);letter-spacing:-.01em;white-space:nowrap;text-align:right}
+.ss-line .ss-v.green{color:var(--success)} .ss-line .ss-v.blue{color:var(--info)}
+.ss-foot{margin-top:var(--s3);font-size:.74rem;color:var(--text-dim);font-style:italic}
+@media(max-width:720px){.specsheet{grid-template-columns:1fr;gap:var(--s4);padding:var(--s4)}.specsheet .ss-brain img{max-width:220px}}
 
 /* ============================================================ SECTION SHELL */
 section{padding:var(--s6) 0;position:relative}
@@ -415,10 +431,33 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     <p class="lead">Not a chatbot. Not a junior you'll catch scrolling their phone. A single human mind that will sit with your hardest problem for hours &mdash; and reason all the way to the bottom of it.</p>
     <p class="turn"><b>By design, since 2015.</b> I built deliberate metacognitive space for exactly this work. Over the years multiple clients have hired me for a full day to do nothing but think about their project &mdash; and somewhere in there I realized this is the thing the world is actually missing. Not more IT skill (mine runs deep); more <em>thinking</em>. When I lock onto one problem for an entire day &mdash; cross-referencing with AI as an instrument, never a crutch &mdash; that is a genuinely powerful process.</p>
 
-    <div class="stat-row">
-      <div class="stat"><div class="num">~10<sup style="font-size:.55em">18</sup> FLOPS</div><div class="label">Throughput on the order of one exaflop<sup><a href="#r1">[1]</a></sup></div></div>
-      <div class="stat"><div class="num green">~20 W</div><div class="label">Power draw of the organic substrate, at rest<sup><a href="#r1">[1]</a></sup></div></div>
-      <div class="stat"><div class="num blue">~1 L / day</div><div class="label">Coolant: 4&ndash;5 tall glasses of water<sup><a href="#r8">[8]</a></sup></div></div>
+    <div class="specsheet">
+      <figure class="ss-brain">
+        <div class="ss-halo"></div>
+        <picture>
+          <source srcset="assets/brain.webp" type="image/webp">
+          <img src="assets/brain.jpg" width="300" height="300" alt="Organic compute substrate — a human brain rendered half as tissue, half as glowing circuitry." loading="eager" decoding="async">
+        </picture>
+      </figure>
+      <div class="ss-specs">
+        <div class="ss-head">
+          <span class="unit">Organic Compute Module &mdash; Human Specs</span>
+          <span class="part">UNIT: 1 &times; <em>Homo&nbsp;sapiens</em></span>
+        </div>
+        <div class="ss-line">
+          <div class="ss-k">Throughput<span class="sub">on the order of one exaflop</span></div>
+          <div class="ss-v">~10<sup style="font-size:.55em">18</sup> FLOPS<sup><a href="#r1">[1]</a></sup></div>
+        </div>
+        <div class="ss-line">
+          <div class="ss-k">Power draw<span class="sub">organic substrate, at rest</span></div>
+          <div class="ss-v green">~20 W<sup><a href="#r1">[1]</a></sup></div>
+        </div>
+        <div class="ss-line">
+          <div class="ss-k">Coolant<span class="sub">4&ndash;5 tall glasses of water</span></div>
+          <div class="ss-v blue">~1 L / day<sup><a href="#r8">[8]</a></sup></div>
+        </div>
+        <p class="ss-foot">These are <strong>your</strong> specifications &mdash; the machine reading this page is hosted in the skull behind your eyes.</p>
+      </div>
     </div>
   </div>
 </header>
@@ -510,7 +549,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
           <source srcset="assets/brain.webp" type="image/webp">
           <img src="assets/brain.jpg" width="440" height="440" alt="A human brain rendered half as organic gold tissue and half as a glowing gold-and-copper printed circuit board, on a dark background — the organic compute module." loading="lazy" decoding="async">
         </picture>
-        <figcaption>// ORGANIC SUBSTRATE &mdash; half tissue, half trace</figcaption>
+        <figcaption>// ORGANIC SUBSTRATE &mdash; full teardown, half tissue / half trace</figcaption>
       </figure>
 
       <div>
