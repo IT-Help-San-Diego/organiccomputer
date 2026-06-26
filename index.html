@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-5EkpHNl34M1Itpb6ZDzjG33Fbyk3VUmiPGdICSL85QM='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
@@ -411,6 +411,25 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
   .ftr-grid-drops{grid-template-columns:repeat(3,1fr)}
   .ftr-grid{grid-template-columns:1fr}
 }
+
+/* ── utility classes (replace inline style= so style-src needs no 'unsafe-inline') ── */
+.u-sup-sm{font-size:.55em}
+.u-sup-1em{font-size:1em}
+.mt-s5{margin-top:var(--s5)}
+.fs-90{font-size:.9rem}
+.fs-92{font-size:.92rem}
+.fs-86{font-size:.86rem}
+.fs-84{font-size:.84rem}
+.fs-86.mt-s3,.fs-84.mt-s3{margin-top:var(--s3)}
+.mt-s4{margin-top:var(--s4)}
+.c-success{color:var(--success)}
+.c-text{color:var(--text)}
+.muted.fs-84{font-size:.84rem}
+.swatch-green{background:#3fb950}
+.swatch-gold{background:#d4a853}
+.swatch-red{background:#f85149}
+.powerbig{font-size:clamp(1.8rem,6vw,2.8rem);color:var(--amber);font-weight:700}
+.callout.center-note{margin:var(--s4) 0 0;text-align:center;border-left:none;background:transparent}
 </style>
 <script type="application/ld+json">
 {
@@ -563,7 +582,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         </div>
         <div class="ss-line">
           <div class="ss-k">Throughput<span class="sub">on the order of one exaflop</span></div>
-          <div class="ss-v">~10<sup style="font-size:.55em">18</sup> FLOPS<sup><a href="#r1">[1]</a></sup></div>
+          <div class="ss-v">~10<sup class="u-sup-sm">18</sup> FLOPS<sup><a href="#r1">[1]</a></sup></div>
         </div>
         <div class="ss-line">
           <div class="ss-k">Power draw<span class="sub">organic substrate, at rest</span></div>
@@ -610,7 +629,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="item"><div class="k">Clean signal</div><p><b>Information from the source.</b> No Facebook, no doom-feed, no cable-news narrative epistemically polluting my inputs. Garbage priors produce garbage conclusions &mdash; so I go to primary evidence and reason from there.</p></div>
       <div class="item"><div class="k">Operating discipline</div><p><b>AI as instrument, not author.</b> I use AI to cross-reference and stress-test &mdash; with human logic always driving. That's the difference between a tool and a crutch.</p></div>
     </div>
-    <div class="callout" style="margin-top:var(--s5)"><strong>The honest deal:</strong> you'll never catch me phoning it in, because this isn't a side hustle &mdash; it's how I'm built. I don't have a feed to check or a hangover to nurse. When I take your problem, you get the whole apparatus &mdash; rested, hydrated, undistracted &mdash; pointed at it for as long as the problem takes.</div>
+    <div class="callout mt-s5"><strong>The honest deal:</strong> you'll never catch me phoning it in, because this isn't a side hustle &mdash; it's how I'm built. I don't have a feed to check or a hangover to nurse. When I take your problem, you get the whole apparatus &mdash; rested, hydrated, undistracted &mdash; pointed at it for as long as the problem takes.</div>
   </div>
 </section>
 
@@ -675,11 +694,11 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
           <div class="cell"><div class="k">Volume</div><div class="v">~1,260 cm³</div></div>
           <div class="cell"><div class="k">Neurons</div><div class="v">~86 billion</div></div>
           <div class="cell"><div class="k">Synapses</div><div class="v">~1.5×10¹⁴</div></div>
-          <div class="cell"><div class="k">Power</div><div class="v green" style="color:var(--success)">~20 W</div></div>
+          <div class="cell"><div class="k">Power</div><div class="v green c-success">~20 W</div></div>
           <div class="cell"><div class="k">Op. temp</div><div class="v">~37 °C</div></div>
           <div class="cell wide"><div class="k">Process node</div><div class="v">biological &mdash; ~4 billion years of R&amp;D <small>· self-fabricating, self-repairing</small></div></div>
         </div>
-        <p class="muted" style="font-size:.84rem;margin-top:var(--s3)">Physical figures: NINDS<sup><a href="#r5">[5]</a></sup>, Herculano-Houzel 2009<sup><a href="#r6">[6]</a></sup>, Drachman 2005<sup><a href="#r7">[7]</a></sup>.</p>
+        <p class="muted fs-84 mt-s3">Physical figures: NINDS<sup><a href="#r5">[5]</a></sup>, Herculano-Houzel 2009<sup><a href="#r6">[6]</a></sup>, Drachman 2005<sup><a href="#r7">[7]</a></sup>.</p>
       </div>
     </div>
 
@@ -716,7 +735,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     <!-- CHART 1: emulation ladder, log scale -->
     <div class="chartcard">
       <h3>Emulation cost ladder</h3>
-      <div class="sub">// FLOPS required to simulate the brain at increasing fidelity — log₁₀ scale — Sandberg &amp; Bostrom 2008<sup style="font-size:1em"><a href="#r2">[2]</a></sup></div>
+      <div class="sub">// FLOPS required to simulate the brain at increasing fidelity — log₁₀ scale — Sandberg &amp; Bostrom 2008<sup class="u-sup-1em"><a href="#r2">[2]</a></sup></div>
       <svg viewBox="0 0 720 250" role="img" aria-label="Logarithmic bar chart of FLOPS required at increasing emulation fidelity">
         <!-- gridlines + axis labels at 10^12..10^26 -->
         <g font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#6e7681">
@@ -759,9 +778,9 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         </g>
       </svg>
       <div class="legend">
-        <span><i style="background:#3fb950"></i>what it functionally does</span>
-        <span><i style="background:#d4a853"></i>spiking-network emulation</span>
-        <span><i style="background:#f85149"></i>full biochemical detail</span>
+        <span><i class="swatch-green"></i>what it functionally does</span>
+        <span><i class="swatch-gold"></i>spiking-network emulation</span>
+        <span><i class="swatch-red"></i>full biochemical detail</span>
       </div>
     </div>
 
@@ -771,9 +790,9 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="sub">// organic substrate vs. Frontier-class supercomputer — the real gap is six orders of magnitude</div>
       <div class="pbar"><div class="plabel">Organic module<span class="pw">20 watts</span></div><div class="track"><div class="fill brain">20&nbsp;W</div></div></div>
       <div class="pbar"><div class="plabel">Frontier<span class="pw">~21,000,000 watts</span></div><div class="track"><div class="fill super">~21&nbsp;MW</div></div></div>
-      <div class="callout" style="margin:var(--s4) 0 0;text-align:center;border-left:none;background:transparent">
-        <span class="mono" style="font-size:clamp(1.8rem,6vw,2.8rem);color:var(--amber);font-weight:700">~1,000,000×</span><br>
-        <span style="font-size:.9rem">more power for the silicon to do what the organic module does on a lightbulb.<sup><a href="#r1">[1]</a><a href="#r9">[9]</a></sup></span>
+      <div class="callout center-note">
+        <span class="mono powerbig">~1,000,000×</span><br>
+        <span class="fs-90">more power for the silicon to do what the organic module does on a lightbulb.<sup><a href="#r1">[1]</a><a href="#r9">[9]</a></sup></span>
       </div>
     </div>
 
@@ -784,7 +803,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="pbar"><div class="plabel">Avg. human, 2004<span class="pw">~2.5 minutes</span></div><div class="track"><div class="fill att04">2.5&nbsp;min</div></div></div>
       <div class="pbar"><div class="plabel">Avg. human, today<span class="pw">~47 seconds</span></div><div class="track"><div class="fill att23">47&nbsp;s</div></div></div>
       <div class="pbar"><div class="plabel">Organic module<span class="pw">hours, on one problem</span></div><div class="track"><div class="fill attdeep">a full working day &rarr;</div></div></div>
-      <p class="muted" style="font-size:.86rem;margin-top:var(--s3)">In under two decades, the average attention span on any screen fell from <b style="color:var(--text)">2.5&nbsp;minutes to 47&nbsp;seconds</b> &mdash; a 97% collapse.<sup><a href="#r10">[10]</a></sup> Under a genuine tech crisis, when someone can't even reach their own email, it falls further still. This module is built to hold a single problem for <em>hours</em> &mdash; sustained partly by the same water on the spec sheet: even mild dehydration measurably degrades vigilance and working memory.<sup><a href="#r11">[11]</a></sup></p>
+      <p class="muted fs-86 mt-s3">In under two decades, the average attention span on any screen fell from <b class="c-text">2.5&nbsp;minutes to 47&nbsp;seconds</b> &mdash; a 97% collapse.<sup><a href="#r10">[10]</a></sup> Under a genuine tech crisis, when someone can't even reach their own email, it falls further still. This module is built to hold a single problem for <em>hours</em> &mdash; sustained partly by the same water on the spec sheet: even mild dehydration measurably degrades vigilance and working memory.<sup><a href="#r11">[11]</a></sup></p>
     </div>
   </div>
 </section>
@@ -950,8 +969,8 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         <text x="700" y="74" text-anchor="end">V&nbsp;= an answer you can use</text>
       </g>
     </svg>
-    <p class="rband muted" style="font-size:.9rem">Ohm's law, applied to consulting: <span class="ohm">V = I·R</span>. Push raw input through with zero resistance and you get noise. Put a real mind in series, and you get a signal worth acting on.</p>
-    <p class="rband" style="font-size:.92rem;margin-top:var(--s4)">Organic Computer is a project of the <a href="https://intellectualresistance.com" target="_blank" rel="noopener"><b>Intellectual Resistance</b></a> &mdash; the larger body of work on logic, reason, and thinking done right.</p>
+    <p class="rband muted fs-90">Ohm's law, applied to consulting: <span class="ohm">V = I·R</span>. Push raw input through with zero resistance and you get noise. Put a real mind in series, and you get a signal worth acting on.</p>
+    <p class="rband fs-92 mt-s4">Organic Computer is a project of the <a href="https://intellectualresistance.com" target="_blank" rel="noopener"><b>Intellectual Resistance</b></a> &mdash; the larger body of work on logic, reason, and thinking done right.</p>
   </div>
 </section>
 
