@@ -1,0 +1,105 @@
+name: Deploy organiccomputer.me → S3 + CloudFront
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Least-privilege default. AWS auth is via repo secrets, not GITHUB_TOKEN.
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    env:
+      BUCKET: ${{ secrets.OC_S3_BUCKET }}
+      DIST_ID: ${{ secrets.OC_CF_DIST_ID }}
+      CF_HEADERS_POLICY_ID: ${{ secrets.OC_CF_HEADERS_POLICY_ID }}
+      AWS_REGION: us-east-1
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      # Static site: nothing to build. Guard against accidental script bloat —
+      # the CSP enforces script-src 'none', so any <script> would break in prod.
+      - name: Guard — no <script> tags (CSP script-src 'none')
+        run: |
+          if grep -rIl --include='*.html' '<script' .; then
+            echo "::error::Found <script> tag(s); CSP forbids scripts on this site."
+            exit 1
+          fi
+          echo "OK — no script tags."
+
+      - name: Guard — no external subresources
+        # Outbound <a href> links are fine; subresource refs (src/href on
+        # link/img/script to other origins) are not. Flag any http(s) in
+        # src= / srcset= attributes.
+        run: |
+          if grep -rIoE '(src|srcset)="https?://[^"]*"' --include='*.html' .; then
+            echo "::error::External subresource detected; assets must be self-hosted."
+            exit 1
+          fi
+          echo "OK — no external subresources."
+
+      - name: Update CloudFront security-headers policy (CSP)
+        # Idempotent: fetch current ETag, push the policy from the repo so the
+        # live posture always matches infra/cloudfront/security-headers.json.
+        run: |
+          set -euo pipefail
+          POLICY_FILE=infra/cloudfront/security-headers.json
+          ETAG=$(aws cloudfront get-response-headers-policy \
+            --id "$CF_HEADERS_POLICY_ID" --query 'ETag' --output text)
+          aws cloudfront update-response-headers-policy \
+            --id "$CF_HEADERS_POLICY_ID" \
+            --if-match "$ETAG" \
+            --response-headers-policy-config "file://$POLICY_FILE" \
+            >/dev/null
+          echo "CloudFront headers policy synced."
+
+      - name: Upload immutable assets (long cache)
+        run: |
+          aws s3 sync . "s3://$BUCKET/" \
+            --exclude ".git/*" --exclude ".github/*" --exclude "infra/*" \
+            --exclude "*.md" --exclude ".gitignore" --exclude ".gitattributes" \
+            --exclude ".DS_Store" --exclude "**/.DS_Store" \
+            --exclude "*.html" --exclude "robots.txt" \
+            --cache-control "public,max-age=31536000,immutable" \
+            --metadata-directive REPLACE --delete
+
+      - name: Upload HTML + robots (short cache)
+        run: |
+          aws s3 sync . "s3://$BUCKET/" \
+            --exclude "*" --include "*.html" --include "robots.txt" \
+            --exclude ".git/*" --exclude ".github/*" --exclude "infra/*" \
+            --cache-control "public,max-age=3600,stale-while-revalidate=86400" \
+            --metadata-directive REPLACE
+
+      - name: Invalidate CloudFront and wait
+        run: |
+          set -euo pipefail
+          ID=$(aws cloudfront create-invalidation --distribution-id "$DIST_ID" \
+            --paths '/*' --query 'Invalidation.Id' --output text)
+          echo "Invalidation: $ID"
+          for i in $(seq 1 90); do
+            S=$(aws cloudfront get-invalidation --distribution-id "$DIST_ID" --id "$ID" \
+              --query 'Invalidation.Status' --output text)
+            echo "attempt $i/90: $S"
+            [ "$S" = "Completed" ] && exit 0
+            sleep 20
+          done
+          echo "::error::Invalidation $ID did not complete in time."
+          exit 1
+
+  pr-note:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploy runs only on push to main; this PR job keeps Actions from reporting 'No jobs were run'."

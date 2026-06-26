@@ -1,0 +1,17 @@
+# Local build / OS cruft — keep the repo clean (Sonar-friendly)
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Node (only if tooling is added later)
+node_modules/
+npm-debug.log*
+
+# Local preview artifacts
+/tmp/
+*.log

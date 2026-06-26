@@ -1,0 +1,7 @@
+# organiccomputer.me
+# A project of the Intellectual Resistance.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://organiccomputer.me/sitemap.xml
