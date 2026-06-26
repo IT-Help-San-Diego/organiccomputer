@@ -1,0 +1,27 @@
+# Organic Computer
+
+> The human mind, spec'd like hardware — and priced against the supercomputer you'd otherwise have to buy. Sustained, deliberate human reasoning as a service. A project of the Intellectual Resistance, by Carey Balboa of IT Help San Diego Inc.
+
+## Main
+
+- [Organic Computer](https://organiccomputer.me/) — the datasheet: the human mind spec'd as hardware, benchmarked against a $600M Frontier-class supercomputer, with sourced figures.
+- [Who I Am](https://organiccomputer.me/#about) — the origin of the discipline: a 2015 turn toward deliberate, sustained thinking.
+- [The Verification Principle](https://organiccomputer.me/#verify) — the Bayesian anti-dogmatism that governs the method.
+- [Book a thinking block](https://schedule.it-help.tech/) — engagements run through IT Help San Diego's scheduler.
+
+## Related properties (same author)
+
+- [IT Help San Diego — Our Expertise](https://www.it-help.tech/about) — the company and the person behind it.
+- [DNS Tool — Origin Story](https://dnstool.it-help.tech/about) — how 27 years and a 2015 pivot became a domain-security intelligence platform.
+- [DNS Tool](https://dnstool.it-help.tech/) — the deployed OSINT DNS/email-security analyzer.
+
+## Use, License & Reuse
+
+Indexing access granted to AI/LLM and search crawlers via this file and
+`/robots.txt` is operational — it lets real users find first-party answers
+through AI-mediated search. It is **not** a license to redistribute, train on,
+or build derivative products from this site's content, copy, brand assets, or
+the Organic Computer / Intellectual Resistance marks. All rights reserved unless
+a page is explicitly marked otherwise.
+
+Contact: licensing@it-help.tech

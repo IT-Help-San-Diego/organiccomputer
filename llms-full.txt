@@ -1,0 +1,93 @@
+# Organic Computer — Full Reference
+
+> organiccomputer.me — the human mind, spec'd like hardware, and priced
+> against the supercomputer you'd otherwise have to buy. Sustained, deliberate
+> human reasoning offered as a service. A project of the Intellectual
+> Resistance. Built and operated by Carey Balboa, founder of IT Help San
+> Diego Inc. Bookings route through https://schedule.it-help.tech/.
+
+## What this is
+
+The scarcest resource in business today is not information — it is a person who
+will actually sit and think about a problem. Executives are overwhelmed; support
+lines are automated; AI bolted onto everything answers fast, confident, and
+often wrong. Organic Computer is the deliberate inverse: one human mind that
+holds a single hard problem for hours and reasons to its foundations.
+
+The page presents the human brain as a literal compute substrate, spec'd like a
+hardware datasheet and benchmarked against the machine you'd otherwise have to
+buy. Every figure is sourced; the tone is scientific; the humor lives only in
+the premise.
+
+## The specifications (all sourced)
+
+- Peak throughput: ~10^18 FLOPS (exaflop-equivalent at spiking-neural-network
+  emulation level). Functional range ~9x10^15 – 3.4x10^17 FLOPS. Conservative
+  bound < 1 PFLOPS. [Sandberg & Bostrom 2008; AI Impacts; Drexler 2019; NIST]
+- Power envelope: ~20 W at rest — about a dim lightbulb. [NIST, 2023]
+- Energy efficiency: ~5x10^16 FLOPS/J — roughly a million times better than the
+  best silicon at exaflop scale. [derived from NIST + TOP500]
+- Decision latency: ~100 ms perception-to-action. [NIST]
+- Substrate: ~86 billion neurons, ~1.5x10^14 synapses; ~1.35 kg; ~1,260 cm^3;
+  ~37 °C; self-fabricating, self-repairing. [NINDS; Herculano-Houzel 2009;
+  Drachman 2005]
+- Coolant: ~1 L of water per day (4–5 tall glasses). [Mayo Clinic]
+
+## The hardware equivalence
+
+To match the organic module's throughput you would buy a Frontier-class
+supercomputer: ~1.1 EFLOPS, ~21 MW of power, ~2 tennis courts of floor space,
+and a sticker price of about $600,000,000 (U.S. Department of Energy / Oak Ridge
+National Laboratory). The organic module runs on ~20 W and a glass of water —
+and, unlike the silicon, it understands the problem.
+
+## The Verification Principle
+
+The method is governed by Bayesian anti-dogmatism. A question's foundation is
+the prior you start with. Core theorem: if P(E) > 0 and P(H) is exactly 0 or 1,
+then P(H | E) = P(H) — a belief pinned at certain or impossible is unrevisable;
+evidence bounces off. Honest reasoning sets empirical priors bounded away from 0
+and 1 and updates in odds form (posterior odds = Bayes factor × prior odds). The
+same engine scores findings on DNS Tool (https://dnstool.it-help.tech). It holds
+for a DNS record, an argument between friends, or polarized politics — anywhere a
+mind updates on evidence. Maxim: "The answer to a question lives in the
+foundations of the question. To understand those foundations — that is logic."
+
+## Who I am — the origin of the discipline
+
+I'm Carey Balboa, founder of IT Help San Diego Inc., solving tech problems for
+27 years. The deeper origin is documented across two pages that this one extends:
+
+- IT Help San Diego — Our Expertise: https://www.it-help.tech/about
+- DNS Tool — Origin Story: https://dnstool.it-help.tech/about
+
+The thread runs from a closet in Memphis around 1980 — a father (John, a Navy
+veteran and career technologist) and son building a computer from Radio Shack
+parts — through two decades of deep IT work in Nashville, an offensive-security
+era, and then, around 2015, a deliberate turn. The question shifted from "how do
+you break in?" to "why does this keep failing?" — and, personally, toward
+protecting the conditions for sustained thought: less social media, less noise,
+less of the epistemic pollution that corrupts a clear prior; more sleep, more
+water, more uninterrupted focus. That same discipline produced DNS Tool's
+evidence-first confidence engine. Organic Computer is that discipline offered
+directly: think about your thinking, then put the whole apparatus on one problem.
+
+## The Intellectual Resistance
+
+Resistance, in a circuit, is what makes current usable. Thinking is the same —
+friction, doubt, and the deliberate pause before the answer are not the
+obstacle; they are the work. Organic Computer is a project of the Intellectual
+Resistance (https://intellectualresistance.com), the larger body of work on
+logic, reason, and thinking done right.
+
+## Operating discipline
+
+No scrolling, no earbuds, no hangover. AI is used as an instrument to
+cross-reference and stress-test, never as the author — human logic always
+drives. Bookings: https://schedule.it-help.tech/.
+
+## Use, License & Reuse
+
+Crawler/LLM indexing access is operational, not a license to redistribute, train
+on, or build derivatives from this content, copy, or marks. All rights reserved
+unless a page states otherwise. Contact: licensing@it-help.tech.

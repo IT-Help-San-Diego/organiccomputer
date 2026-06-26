@@ -242,6 +242,16 @@ section{padding:var(--s6) 0;position:relative}
 
 /* ============================================================ VERIFICATION PRINCIPLE */
 .verify{background:linear-gradient(180deg,#0d1117,#0b0e14)}
+/* owl semaphore epistemic seal */
+.owl-seal{display:flex;align-items:center;gap:var(--s4);margin:var(--s4) 0 0;
+  border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;
+  background:var(--bg-2);padding:var(--s3) var(--s4)}
+.owl-seal img{width:84px;height:84px;flex-shrink:0;filter:drop-shadow(0 4px 14px rgba(0,0,0,.5))}
+.owl-seal .cap{font-size:.86rem;color:var(--text-muted)}
+.owl-seal .cap b{color:var(--gold);font-weight:600}
+.owl-seal .cap .glyph{font-family:var(--mono);font-size:.78rem;color:var(--text-dim);display:block;margin-top:.3rem}
+.owl-seal .cap a{color:var(--copper)}
+@media(max-width:560px){.owl-seal{flex-direction:column;text-align:center;border-left:1px solid var(--border);border-top:3px solid var(--gold);border-radius:0 0 12px 12px}}
 .vp-lead{max-width:60ch;color:var(--text-muted)}
 .vp-lead b{color:var(--text)}
 .spectrum{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:var(--s3);margin-top:var(--s5);align-items:stretch}
@@ -605,6 +615,16 @@ footer .mono{color:var(--text-muted)}
       <div><h2>The Verification Principle</h2><div class="tag">Understanding a question's foundations &mdash; stated as math.</div></div>
     </div>
     <p class="vp-lead">The maxim above isn't a slogan; it's a theorem. A question's <b>foundation</b> is the belief you start with &mdash; the <b>prior</b>. And there's a hard rule about priors: if you begin in <b>absolute certainty</b>, no evidence on earth can move you. Honest reasoning lives strictly <em>between</em> the extremes, and updates with the evidence. This is the same engine that scores findings on the <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener">DNS&nbsp;Tool</a> &mdash; the principle is domain-agnostic.</p>
+
+    <figure class="owl-seal">
+      <picture>
+        <source srcset="assets/owl-normative.webp" type="image/webp">
+        <img src="assets/owl-normative.png" width="84" height="84" alt="The Normative owl semaphore — gold Owl of Athena, upright and facing right, in a Greek meander ring." loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="cap">Marked <b>Normative</b> in the <a href="https://dnstool.it-help.tech/brand-colors" target="_blank" rel="noopener">Owl Semaphore</a> &mdash; the identity state: binding, reference-grade methodology, operationally validated within its scope until evidence requires otherwise. Not a claim of permanent truth; a statement of epistemic status.
+        <span class="glyph">T = I &nbsp;·&nbsp; det = +1 &nbsp;·&nbsp; (x, y) → (x, y)</span>
+      </figcaption>
+    </figure>
 
     <!-- the spectrum: blind trust  |  verify  |  blind accusation -->
     <div class="spectrum">
