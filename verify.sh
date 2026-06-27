@@ -69,6 +69,34 @@ if os.path.exists("bimi-logo.svg"):
     k("bimi-logo.svg no scripts/external refs",
       not any(b in svg for b in ["<script", "xlink:href", 'href="http', "<animate"]))
 
+# 6. Stale-content guard: forbidden phrases must not appear in ANY shipped text file
+#    (case-insensitive — catches uppercase SVG <text> the way a global rename can miss).
+#    Edit FORBIDDEN to match this site's retired wording.
+FORBIDDEN = ["done right"]
+shipped_ext = (".html", ".svg", ".txt", ".xml", ".json", ".webmanifest")
+skip_dirs = (".git", ".github", "node_modules")
+stale_hits = []
+for root, dirs, files in os.walk("."):
+    dirs[:] = [d for d in dirs if d not in skip_dirs]
+    for fn in files:
+        if not fn.lower().endswith(shipped_ext):
+            continue
+        p = os.path.join(root, fn)
+        try:
+            txt = open(p, encoding="utf-8", errors="ignore").read().lower()
+        except Exception:
+            continue
+        for phrase in FORBIDDEN:
+            if phrase.lower() in txt:
+                stale_hits.append(f"{p}: '{phrase}'")
+k("no stale/retired phrases in shipped files" + (f" (hits: {stale_hits})" if stale_hits else ""),
+  len(stale_hits) == 0)
+
+# 7. OG image must be a raster (Apple/iMessage will not render an SVG og:image)
+og = re.search(r'property="og:image"\s+content="[^"]+\.(svg|png|jpg|jpeg)"', html)
+if og:
+    k("og:image is raster (png/jpg, not svg — iMessage requirement)", og.group(1).lower() != "svg")
+
 if fails:
     print("=" * 52); print(f"FAILED: {len(fails)} check(s)"); sys.exit(1)
 print("=" * 52); print("All checks passed.")
