@@ -79,7 +79,7 @@ Resistance, in a circuit, is what makes current usable. Thinking is the same —
 friction, doubt, and the deliberate pause before the answer are not the
 obstacle; they are the work. Organic Computer is a project of the Intellectual
 Resistance (https://intellectualresistance.com), the larger body of work on
-logic, reason, and thinking done right.
+logic, reason, and thinking that shows its work.
 
 ## Operating discipline
 
