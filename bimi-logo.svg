@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 512 512" width="512" height="512" x="0" y="0" preserveAspectRatio="xMidYMid meet">
+  <title>Organic Computer</title>
+  <rect x="0" y="0" width="512" height="512" fill="#0d1117"/>
+  <g stroke="#c8956a" stroke-width="18" fill="none" stroke-linecap="round">
+    <path d="M80 256 H160"/>
+    <path d="M352 256 H432"/>
+    <path d="M256 80 V144"/>
+    <path d="M256 368 V432"/>
+  </g>
+  <g fill="#3fb950">
+    <circle cx="80" cy="256" r="16"/>
+    <circle cx="432" cy="256" r="16"/>
+  </g>
+  <g fill="#d4a853">
+    <circle cx="256" cy="80" r="16"/>
+    <circle cx="256" cy="432" r="16"/>
+  </g>
+  <rect x="160" y="160" width="192" height="192" rx="56" fill="none" stroke="#d4a853" stroke-width="20"/>
+  <circle cx="256" cy="256" r="72" fill="none" stroke="#56d364" stroke-width="16"/>
+  <circle cx="256" cy="256" r="28" fill="#56d364"/>
+</svg>
