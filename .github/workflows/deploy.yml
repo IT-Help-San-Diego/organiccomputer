@@ -77,7 +77,7 @@ jobs:
           aws s3 sync . "s3://$BUCKET/" \
             --exclude ".git/*" --exclude ".github/*" --exclude "infra/*" \
             --exclude "*.md" --exclude ".gitignore" --exclude ".gitattributes" \
-            --exclude "*.sh" \
+            --exclude "*.sh" --exclude "Makefile" \
             --exclude ".DS_Store" --exclude "**/.DS_Store" \
             --exclude "*.html" --exclude "*.txt" --exclude "*.xml" --exclude ".well-known/*" \
             --cache-control "public,max-age=31536000,immutable" \
