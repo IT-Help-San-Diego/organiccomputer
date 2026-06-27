@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-5EkpHNl34M1Itpb6ZDzjG33Fbyk3VUmiPGdICSL85QM='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-WtwYJaBWebEhi8C7u1EC3Q/xDtfipP9Knwc2FjjF20c='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
@@ -175,7 +175,7 @@ section{padding:var(--s6) 0;position:relative}
 /* attention-span comparison fills (reuse .chartcard/.pbar) */
 .fill.att04{width:50%;background:linear-gradient(90deg,#586069,#8b949e);color:#0d1117}
 .fill.att23{width:15.6%;background:linear-gradient(90deg,#bb4d44,#f85149);color:#1a0606}
-.fill.attdeep{width:100%;background:linear-gradient(90deg,#2ea043,#56d364 55%,#d4a853);color:#06210f}
+.fill.attdeep{width:100%;background:linear-gradient(90deg,#2ea043,#56d364 45%,#d4a853);color:#06210f;position:relative;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 25%,calc(100% - 14px) 50%,100% 75%,calc(100% - 14px) 100%,0 100%)}
 
 /* ============================================================ WHO I AM / ABOUT */
 .about{background:linear-gradient(180deg,#0b0e14,#0d1117)}
@@ -802,8 +802,8 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="sub">// sustained focus on a single screen — the market is shrinking; the module runs the other way</div>
       <div class="pbar"><div class="plabel">Avg. human, 2004<span class="pw">~2.5 minutes</span></div><div class="track"><div class="fill att04">2.5&nbsp;min</div></div></div>
       <div class="pbar"><div class="plabel">Avg. human, today<span class="pw">~47 seconds</span></div><div class="track"><div class="fill att23">47&nbsp;s</div></div></div>
-      <div class="pbar"><div class="plabel">Organic module<span class="pw">hours, on one problem</span></div><div class="track"><div class="fill attdeep">a full working day &rarr;</div></div></div>
-      <p class="muted fs-86 mt-s3">In under two decades, the average attention span on any screen fell from <b class="c-text">2.5&nbsp;minutes to 47&nbsp;seconds</b> &mdash; a 97% collapse.<sup><a href="#r10">[10]</a></sup> Under a genuine tech crisis, when someone can't even reach their own email, it falls further still. This module is built to hold a single problem for <em>hours</em> &mdash; sustained partly by the same water on the spec sheet: even mild dehydration measurably degrades vigilance and working memory.<sup><a href="#r11">[11]</a></sup></p>
+      <div class="pbar"><div class="plabel">Organic module<span class="pw">hours, on one problem</span></div><div class="track"><div class="fill attdeep">a full day &mdash; <b>off this chart &rarr;</b></div></div></div>
+      <p class="muted fs-86 mt-s3">In under two decades, the average attention span on any screen fell from <b class="c-text">2.5&nbsp;minutes to 47&nbsp;seconds</b> &mdash; a 97% collapse.<sup><a href="#r10">[10]</a></sup> Under a genuine tech crisis, when someone can't even reach their own email, it falls further still. <b class="c-text">Honest note on the scale:</b> the two human bars are drawn to scale with each other (47&nbsp;s is ~16% of 2.5&nbsp;min). The module bar is <em>not</em> &mdash; and deliberately so. A single sustained focus block of ~12&nbsp;hours is roughly <b class="c-text">290&times; the 2004 bar</b> and <b class="c-text">~900&times; today's 47&nbsp;seconds</b>; at true scale it would run off the page by a factor of nine hundred, so the bar breaks its axis rather than fake a tidy ratio. This module is built to hold a single problem for <em>hours</em> &mdash; sustained partly by the same water on the spec sheet: even mild dehydration measurably degrades vigilance and working memory.<sup><a href="#r11">[11]</a></sup></p>
     </div>
   </div>
 </section>
