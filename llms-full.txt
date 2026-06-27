@@ -36,9 +36,10 @@ the premise.
 ## The hardware equivalence
 
 To match the organic module's throughput you would buy a Frontier-class
-supercomputer: ~1.1 EFLOPS, ~21 MW of power, ~2 tennis courts of floor space,
+supercomputer: ~1.35 EFLOPS, ~24.6 MW of power, ~2 tennis courts of floor space,
 and a sticker price of about $600,000,000 (U.S. Department of Energy / Oak Ridge
-National Laboratory). The organic module runs on ~20 W and a glass of water —
+National Laboratory; TOP500 Nov 2024, No. 2: 1.353 EFLOPS Rmax, ~24,600 kW). The
+organic module runs on ~20 W and a glass of water —
 and, unlike the silicon, it understands the problem.
 
 ## The Verification Principle
