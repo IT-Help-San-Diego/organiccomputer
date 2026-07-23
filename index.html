@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-WtwYJaBWebEhi8C7u1EC3Q/xDtfipP9Knwc2FjjF20c='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-4lnruvYk8zl3fZxdWjttg9tAlK22gudGBAxkq7X+eJg='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
@@ -345,18 +345,12 @@ section{padding:var(--s6) 0;position:relative}
 .ohm{font-family:var(--mono);color:var(--copper)}
 
 /* ============================================================ CTA */
-.cta{text-align:center}
-.cta .box{border:1px solid var(--border);border-radius:18px;background:linear-gradient(160deg,#11161f,#0d1117);
-  padding:var(--s6) var(--s4);max-width:720px;margin:0 auto;position:relative;overflow:hidden}
-.cta .box::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% -10%,rgba(212,168,83,.10),transparent 70%);pointer-events:none}
-.cta h2{font-size:clamp(1.6rem,4vw,2.3rem)}
-.cta p{color:var(--text-muted);max-width:46ch;margin:0 auto var(--s4)}
-.btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:1rem;padding:.85rem 1.8rem;border-radius:10px;border:1px solid transparent;cursor:pointer}
-.btn-primary{background:linear-gradient(180deg,#e0b667,#c8956a);color:#1a1206;box-shadow:0 8px 24px rgba(200,149,106,.25)}
-.btn-primary:hover{color:#1a1206;filter:brightness(1.06)}
-.btn-ghost{background:transparent;color:var(--text);border-color:var(--border);margin-left:.6rem}
-.btn-ghost:hover{color:var(--gold);border-color:var(--gold)}
-@media(max-width:520px){.btn-ghost{margin-left:0;margin-top:.6rem;display:inline-block}}
+.bridge{border-top:1px solid var(--border);background:var(--bg-2);padding:var(--s8) 0}
+.bridge-inner{max-width:560px;margin:0 auto;text-align:center}
+.bridge-label{font-size:1.15rem;color:var(--text);line-height:1.5;margin-bottom:var(--s3)}
+.bridge-sub{font-size:.95rem;color:var(--text-muted);line-height:1.6;margin-bottom:var(--s5)}
+.bridge-link{font-family:var(--mono);font-size:.9rem;color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+.bridge-link:hover{border-bottom-color:var(--gold)}
 
 /* ============================================================ REFERENCES + FOOTER */
 .refs{border-top:1px solid var(--border);background:var(--bg-2)}
@@ -974,15 +968,13 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
   </div>
 </section>
 
-<!-- ===================== CTA ===================== -->
-<section class="cta" id="engage">
+<!-- ===================== BRIDGE TO CALIBRATION SCOPE ===================== -->
+<section class="bridge" id="verify">
   <div class="container">
-    <div class="box">
-      <div class="eyebrow center">Engage the module</div>
-      <h2>Hand me the problem you don't have time to think about.</h2>
-      <p>Half-day, full-day, or ongoing. You bring the hard thing; I bring the hours and the method. Reviews speak to results — this page speaks to the spec.</p>
-      <a href="https://book.squareup.com/appointments/mwhvoaiqecb5o2/location/LA35149CK62SV/services/NVI5A7ZBO753UOIVVJVBLOOK" target="_blank" rel="noopener" class="btn btn-primary">Book a thinking block</a>
-      <a href="#module" class="btn btn-ghost">Re-read the datasheet</a>
+    <div class="bridge-inner">
+      <p class="bridge-label">If this datasheet made you want to measure rather than trust it &mdash; that instrument exists.</p>
+      <p class="bridge-sub">Same mind. Same method. Now a local-first scientific tool that benchmarks what minds &mdash; silicon and carbon &mdash; can actually do. Blind tests, machine-verified logic, sealed evidence you can audit. Not a pitch. A proof.</p>
+      <a href="https://calibrationscope.com" target="_blank" rel="noopener" class="bridge-link">See Calibration Scope &rarr;</a>
     </div>
   </div>
 </section>
@@ -1068,6 +1060,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         <a href="#verify" class="ftr-link">Verification Principle</a>
         <a href="#lineage" class="ftr-link">Lineage</a>
         <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener" class="ftr-link">DNS Tool</a>
+        <a href="https://calibrationscope.com" target="_blank" rel="noopener" class="ftr-link">Calibration Scope</a>
         <a href="/llms.txt" class="ftr-link">llms.txt</a>
       </div>
       <div class="ftr-cell">
