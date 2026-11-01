@@ -85,8 +85,6 @@ The same method, deployed — every figure sealed and re-derivable:
 
 - DNS Tool: https://dnstool.it-help.tech — DOI 10.5281/zenodo.19468134
 - Calibration Scope: https://calibrationscope.com — measures carbon and silicon
-- Owl Semaphore: https://github.com/IT-Help-San-Diego/owl-semaphore —
-  DOI 10.5281/zenodo.19473697
 - Tetrasemaphore: https://tetrasemaphore.systems — DOI 10.5281/zenodo.23575816
 - Intellectual Resistance: https://intellectualresistance.com — the umbrella
 
