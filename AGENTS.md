@@ -15,6 +15,13 @@ humor lives entirely in the *premise*; the copy stays scientific and sourced.
 Themed as the same family as it-help.tech and dnstool.it-help.tech, but with its
 own identity.
 
+**De-personalization is a permanent rule:** the page is a companion/science
+datasheet about the human brain — universal, not biographical. No first-person
+bio, no founder's story, no personal photo, no "engage me" copy. The subject is
+the module; the discipline is offered to anyone; provenance lives in footer
+links (ORCID, GitHub org) and the family DOIs, never in the page body. If a
+piece of copy reads as if one person is selling themselves, it is wrong.
+
 ## Stack (deliberately minimal)
 
 - **Plain static HTML/CSS. No build step. No framework. No JS at all.**

@@ -1,23 +1,29 @@
 # Organic Computer — Full Reference
 
-> organiccomputer.me — the human mind, spec'd like hardware, and priced
-> against the supercomputer you'd otherwise have to buy. Sustained, deliberate
-> human reasoning offered as a service. A project of the Intellectual
-> Resistance. Built and operated by Carey Balboa, founder of IT Help San
-> Diego Inc. Bookings route through https://schedule.it-help.tech/.
+> organiccomputer.me — the human mind, spec'd like hardware, and benchmarked
+> against the supercomputer you'd otherwise have to buy. A project of the
+> Intellectual Resistance, under IT Help San Diego Inc. This page is a
+> datasheet, not a booking surface: professional consulting routes through
+> https://schedule.it-help.tech/.
 
 ## What this is
 
 The scarcest resource in business today is not information — it is a person who
 will actually sit and think about a problem. Executives are overwhelmed; support
 lines are automated; AI bolted onto everything answers fast, confident, and
-often wrong. Organic Computer is the deliberate inverse: one human mind that
-holds a single hard problem for hours and reasons to its foundations.
+often wrong. Organic Computer is the deliberate inverse told as a datasheet:
+the human brain presented as a literal compute substrate, spec'd like hardware
+and benchmarked against the machine you'd otherwise have to buy.
 
-The page presents the human brain as a literal compute substrate, spec'd like a
-hardware datasheet and benchmarked against the machine you'd otherwise have to
-buy. Every figure is sourced; the tone is scientific; the humor lives only in
-the premise.
+The point is universal, not personal: every human is an organic computer, with
+an identical spec sheet. What varies is whether the module is operated
+deliberately — the discipline is available to everyone, and it is the same
+discipline that runs under every instrument in the family. AI exists because
+this process works: silicon is human thinking, automated. The organic module is
+where the judgment lives.
+
+Every figure is sourced; the tone is scientific; the humor lives only in the
+premise.
 
 ## The specifications (all sourced)
 
@@ -42,6 +48,25 @@ National Laboratory; TOP500 Nov 2024, No. 2: 1.353 EFLOPS Rmax, ~24,600 kW). The
 organic module runs on ~20 W and a glass of water —
 and, unlike the silicon, it understands the problem.
 
+## The discipline
+
+Not a special brain — a deliberately-operated one. The spec sheet is identical
+in every skull. The discipline that runs the module properly:
+
+- Architecture: the stock module — identical hardware everywhere; what varies
+  is whether it is aimed.
+- Operating envelope: water, sleep, silence. Even mild dehydration measurably
+  degrades vigilance and working memory (Ganio 2011). A rested, undistracted
+  module is a spec, not a virtue.
+- Input hygiene: from the source, in engineered quiet. Garbage priors produce
+  garbage conclusions; go to primary evidence.
+- Operating discipline: AI as instrument, never author. Machines cross-reference
+  and stress-test; human logic drives.
+
+The claim that a deliberately-operated module can hold one problem for hours is
+anecdotal — not yet instrument-measured. The instrument to measure it is
+Calibration Scope.
+
 ## The Verification Principle
 
 The method is governed by Bayesian anti-dogmatism. A question's foundation is
@@ -54,24 +79,16 @@ for a DNS record, an argument between friends, or polarized politics — anywher
 mind updates on evidence. Maxim: "The answer to a question lives in the
 foundations of the question. To understand those foundations — that is logic."
 
-## Who I am — the origin of the discipline
+## The instrument rack
 
-I'm Carey Balboa, founder of IT Help San Diego Inc., solving tech problems for
-27 years. The deeper origin is documented across two pages that this one extends:
+The same method, deployed — every figure sealed and re-derivable:
 
-- IT Help San Diego — Our Expertise: https://www.it-help.tech/about
-- DNS Tool — Origin Story: https://dnstool.it-help.tech/about
-
-The thread runs from a closet in Memphis around 1980 — a father (John, a Navy
-veteran and career technologist) and son building a computer from Radio Shack
-parts — through two decades of deep IT work in Nashville, an offensive-security
-era, and then, around 2015, a deliberate turn. The question shifted from "how do
-you break in?" to "why does this keep failing?" — and, personally, toward
-protecting the conditions for sustained thought: less social media, less noise,
-less of the epistemic pollution that corrupts a clear prior; more sleep, more
-water, more uninterrupted focus. That same discipline produced DNS Tool's
-evidence-first confidence engine. Organic Computer is that discipline offered
-directly: think about your thinking, then put the whole apparatus on one problem.
+- DNS Tool: https://dnstool.it-help.tech — DOI 10.5281/zenodo.19468134
+- Calibration Scope: https://calibrationscope.com — measures carbon and silicon
+- Owl Semaphore: https://github.com/IT-Help-San-Diego/owl-semaphore —
+  DOI 10.5281/zenodo.19473697
+- Tetrasemaphore: https://tetrasemaphore.systems — DOI 10.5281/zenodo.23575816
+- Intellectual Resistance: https://intellectualresistance.com — the umbrella
 
 ## The Intellectual Resistance
 
@@ -83,9 +100,9 @@ logic, reason, and thinking that shows its work.
 
 ## Operating discipline
 
-No scrolling, no earbuds, no hangover. AI is used as an instrument to
-cross-reference and stress-test, never as the author — human logic always
-drives. Bookings: https://schedule.it-help.tech/.
+The page's operating discipline is stated as a universal spec: no scrolling, no
+earbuds, no hangover; water, sleep, silence; AI as instrument, never author.
+Professional consulting: https://schedule.it-help.tech/.
 
 ## Use, License & Reuse
 
