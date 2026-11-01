@@ -1,19 +1,22 @@
 # Organic Computer
 
-> The human mind, spec'd like hardware — and priced against the supercomputer you'd otherwise have to buy. Sustained, deliberate human reasoning as a service. A project of the Intellectual Resistance, by Carey Balboa of IT Help San Diego Inc.
+> The human mind, spec'd like hardware — the organic compute module behind your eyes, benchmarked against the supercomputer you'd otherwise have to buy. A datasheet, not a pitch. A project of the Intellectual Resistance (IT Help San Diego Inc.).
 
 ## Main
 
 - [Organic Computer](https://organiccomputer.me/) — the datasheet: the human mind spec'd as hardware, benchmarked against a $600M Frontier-class supercomputer, with sourced figures.
-- [Who I Am](https://organiccomputer.me/#about) — the origin of the discipline: a 2015 turn toward deliberate, sustained thinking.
+- [The Discipline](https://organiccomputer.me/#discipline) — the universal operating discipline: water, sleep, silence, primary sources, AI as instrument.
 - [The Verification Principle](https://organiccomputer.me/#verify) — the Bayesian anti-dogmatism that governs the method.
-- [Book a thinking block](https://schedule.it-help.tech/) — engagements run through IT Help San Diego's scheduler.
+- [The Instrument Rack](https://organiccomputer.me/#family) — the research family: DNS Tool, Calibration Scope, Owl Semaphore, Tetrasemaphore, with DOIs.
 
-## Related properties (same author)
+## Related properties
 
-- [IT Help San Diego — Our Expertise](https://www.it-help.tech/about) — the company and the person behind it.
-- [DNS Tool — Origin Story](https://dnstool.it-help.tech/about) — how 27 years and a 2015 pivot became a domain-security intelligence platform.
-- [DNS Tool](https://dnstool.it-help.tech/) — the deployed OSINT DNS/email-security analyzer.
+- [IT Help San Diego](https://www.it-help.tech) — the company behind the research.
+- [DNS Tool](https://dnstool.it-help.tech/) — the deployed OSINT DNS/email-security analyzer (DOI 10.5281/zenodo.19468134).
+- [Calibration Scope](https://calibrationscope.com/) — measures reasoning in any subject, on any substrate.
+- [Owl Semaphore](https://github.com/IT-Help-San-Diego/owl-semaphore) — DOI 10.5281/zenodo.19473697.
+- [Tetrasemaphore](https://tetrasemaphore.systems/) — DOI 10.5281/zenodo.23575816.
+- [Intellectual Resistance](https://intellectualresistance.com/) — the umbrella.
 
 ## Use, License & Reuse
 

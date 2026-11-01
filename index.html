@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-4lnruvYk8zl3fZxdWjttg9tAlK22gudGBAxkq7X+eJg='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-TbYGXmmXhfw2JtRdvm7bDskwtevzsng1VwgLW+01LKM='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
 <title>Organic Computer — the human mind, spec'd like hardware</title>
-<meta name="description" content="You don't have time to think. I do — by design, since 2015. A datasheet for the organic compute module: the human mind, spec'd like hardware and priced against the supercomputer you'd otherwise have to buy.">
-<meta name="author" content="Carey Balboa">
-<meta name="keywords" content="deep thinking consulting, metacognition, organic computer, human compute, sustained reasoning, IT consulting San Diego, verification principle, evidence-first analysis, Carey Balboa, Intellectual Resistance">
+<meta name="description" content="The human mind, spec'd like hardware: ~86 billion neurons at ~20 watts, benchmarked against the supercomputer you'd otherwise have to buy. Every figure sourced.">
+<meta name="author" content="IT Help San Diego Inc.">
+<meta name="keywords" content="organic computer, human compute, metacognition, sustained reasoning, neuroscience crosswalk, verification principle, evidence-first analysis, machine intelligence, Intellectual Resistance">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://organiccomputer.me/">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://organiccomputer.me/">
 <meta property="og:title" content="Organic Computer — the human mind, spec'd like hardware">
-<meta property="og:description" content="You don't have time to think. I do. The human mind, spec'd like hardware and priced against the supercomputer you'd otherwise have to buy.">
+<meta property="og:description" content="The human mind, spec'd like hardware — ~86 billion neurons at ~20 watts, benchmarked against the supercomputer you'd otherwise have to buy.">
 <meta property="og:image" content="https://organiccomputer.me/assets/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -30,7 +30,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Organic Computer — the human mind, spec'd like hardware">
-<meta name="twitter:description" content="You don't have time to think. I do. The human mind, spec'd like hardware — priced against the supercomputer you'd otherwise have to buy.">
+<meta name="twitter:description" content="The human mind, spec'd like hardware — ~86 billion neurons at ~20 watts, benchmarked against the supercomputer you'd otherwise have to buy.">
 <meta name="twitter:image" content="https://organiccomputer.me/assets/og-card.jpg">
 <meta name="twitter:image:alt" content="A human brain, half organic tissue and half glowing circuitry — the organic compute module.">
 <style>
@@ -77,7 +77,7 @@ body{
 a{color:var(--copper);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;transition:color .15s ease}
 a:hover{color:var(--gold)}
 /* structural links are distinguished by layout/box, not color — no underline needed */
-nav a,.btn,.links a,.ftr-copyright a,.ftr-node,.ftr-link,.ftr-socials a,.about-links a,.section-icon a{text-decoration:none}
+nav a,.btn,.links a,.ftr-copyright a,.ftr-node,.ftr-link,.ftr-socials a,.family-links a,.section-icon a{text-decoration:none}
 h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.15;margin:0 0 var(--s2);letter-spacing:-.02em}
 p{margin:0 0 var(--s3)}
 sup a{color:var(--info);font-size:.62em;font-weight:700;padding:0 .1em}
@@ -177,21 +177,13 @@ section{padding:var(--s6) 0;position:relative}
 .fill.att23{width:15.6%;background:linear-gradient(90deg,#bb4d44,#f85149);color:#1a0606}
 .fill.attdeep{width:100%;background:linear-gradient(90deg,#2ea043,#56d364 45%,#d4a853);color:#06210f;position:relative;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 25%,calc(100% - 14px) 50%,100% 75%,calc(100% - 14px) 100%,0 100%)}
 
-/* ============================================================ WHO I AM / ABOUT */
-.about{background:linear-gradient(180deg,#0b0e14,#0d1117)}
-.about-grid{display:grid;grid-template-columns:300px 1fr;gap:var(--s5);align-items:start;margin-top:var(--s4)}
-@media(max-width:760px){.about-grid{grid-template-columns:1fr;gap:var(--s4)}}
-.about-portrait{position:relative}
-.about-portrait img{width:100%;height:auto;max-width:300px;aspect-ratio:1/1;object-fit:cover;
-  border-radius:16px;border:1px solid var(--border);filter:drop-shadow(0 18px 44px rgba(0,0,0,.55))}
-.about-portrait figcaption{font-family:var(--mono);font-size:.72rem;color:var(--text-dim);margin-top:var(--s2);text-align:center;letter-spacing:.04em}
-.about-body p{color:var(--text);max-width:54ch}
-.about-body .turn-year{color:var(--gold);font-weight:600}
-.about-links{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s4)}
-.about-links a{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;font-weight:600;
+/* ============================================================ FAMILY / PROJECT LINKS */
+.family-links{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s4)}
+.family-links a{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;font-weight:600;
   border:1px solid var(--border);border-radius:10px;padding:.6rem 1rem;color:var(--text);background:var(--bg-2)}
-.about-links a:hover{border-color:var(--gold);color:var(--gold)}
-.about-links a .arr{color:var(--copper)}
+.family-links a:hover{border-color:var(--gold);color:var(--gold)}
+.family-links a .arr{color:var(--copper)}
+.family-links .doi{font-family:var(--mono);font-size:.66rem;font-weight:400;color:var(--text-dim);display:block;margin-top:.15rem;letter-spacing:.02em}
 
 /* ============================================================ BRAIN CENTERPIECE */
 .module{background:radial-gradient(80% 120% at 50% 0%,#10151f,#0d1117 70%)}
@@ -434,90 +426,38 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       "@id": "https://organiccomputer.me/#website",
       "url": "https://organiccomputer.me/",
       "name": "Organic Computer",
-      "description": "The human mind, spec'd like hardware — sustained, deliberate reasoning offered as a service.",
+      "description": "The human mind, spec'd like hardware — the organic compute module: ~86 billion neurons, ~20 watts, benchmarked against a Frontier-class supercomputer.",
       "inLanguage": "en-US",
-      "publisher": { "@id": "https://organiccomputer.me/#person" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://organiccomputer.me/#person",
-      "name": "Carey Balboa",
-      "jobTitle": "Founder, IT Help San Diego Inc.",
-      "description": "27 years in technology and security; practitioner of sustained, evidence-first metacognitive problem-solving.",
-      "url": "https://www.it-help.tech/about",
-      "image": "https://organiccomputer.me/assets/carey.jpg",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "ORCID",
-        "value": "0009-0000-5237-9065"
-      },
-      "sameAs": [
-        "https://orcid.org/0009-0000-5237-9065",
-        "https://github.com/IT-Help-San-Diego",
-        "https://www.it-help.tech/about",
-        "https://dnstool.it-help.tech/about"
-      ],
-      "worksFor": { "@id": "https://organiccomputer.me/#org" },
-      "knowsAbout": [
-        "Metacognition",
-        "Bayesian reasoning",
-        "DNS and email security",
-        "Information security",
-        "Evidence-based analysis"
-      ]
+      "publisher": { "@id": "https://organiccomputer.me/#org" }
     },
     {
       "@type": "Organization",
       "@id": "https://organiccomputer.me/#org",
       "name": "IT Help San Diego Inc.",
       "url": "https://www.it-help.tech",
-      "logo": "https://organiccomputer.me/assets/og-card.jpg",
-      "founder": { "@id": "https://organiccomputer.me/#person" }
+      "logo": "https://organiccomputer.me/assets/og-card.jpg"
     },
     {
-      "@type": "ProfessionalService",
-      "@id": "https://organiccomputer.me/#service",
-      "name": "Organic Computer — Deep Thinking as a Service",
+      "@type": "ResearchProject",
+      "@id": "https://organiccomputer.me/#project",
+      "name": "Organic Computer",
       "url": "https://organiccomputer.me/",
       "image": "https://organiccomputer.me/assets/og-card.jpg",
-      "description": "Engage a single human mind to sit with your hardest problem for hours and reason to the bottom of it — sustained, structured thinking with AI used as an instrument, never the author. A project of the Intellectual Resistance.",
-      "provider": { "@id": "https://organiccomputer.me/#person" },
-      "areaServed": "Worldwide",
-      "serviceType": "Strategic problem-solving and deep-thinking consulting",
-      "telephone": "+1-619-853-5008",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "888 Prospect Street Suite 200",
-        "addressLocality": "La Jolla",
-        "addressRegion": "CA",
-        "postalCode": "92037",
-        "addressCountry": "US"
-      },
-      "brand": {
-        "@type": "Brand",
-        "name": "Organic Computer",
-        "slogan": "You don't have time to think. I do."
-      },
-      "potentialAction": {
-        "@type": "ReserveAction",
-        "name": "Book a thinking block",
-        "target": "https://book.squareup.com/appointments/mwhvoaiqecb5o2/location/LA35149CK62SV/services/NVI5A7ZBO753UOIVVJVBLOOK"
-      },
+      "description": "The human mind, spec'd like hardware — a sourced datasheet for the organic compute module and the neuroscience crosswalk between carbon and silicon reasoning.",
       "isPartOf": {
         "@type": "Organization",
         "name": "The Intellectual Resistance",
         "url": "https://intellectualresistance.com"
-      }
+      },
+      "publisher": { "@id": "https://organiccomputer.me/#org" }
     },
     {
       "@type": "BreadcrumbList",
       "@id": "https://organiccomputer.me/#breadcrumb",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Organic Computer", "item": "https://organiccomputer.me/" },
-        { "@type": "ListItem", "position": 2, "name": "Who I Am", "item": "https://organiccomputer.me/#about" },
-        { "@type": "ListItem", "position": 3, "name": "The Verification Principle", "item": "https://organiccomputer.me/#verify" },
-        { "@type": "ListItem", "position": 4, "name": "Engage", "item": "https://organiccomputer.me/#engage" }
+        { "@type": "ListItem", "position": 2, "name": "The Discipline", "item": "https://organiccomputer.me/#discipline" },
+        { "@type": "ListItem", "position": 3, "name": "The Verification Principle", "item": "https://organiccomputer.me/#verify" }
       ]
     }
   ]
@@ -532,12 +472,12 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     <div class="brand"><span class="dot"></span> ORGANIC&nbsp;COMPUTER <span class="domain-tag">organiccomputer.me</span></div>
     <div class="links">
       <a href="#module">The Module</a>
-      <a href="#about">Who I Am</a>
+      <a href="#discipline">The Discipline</a>
       <a href="#price">The Price</a>
       <a href="#lineage">Lineage</a>
       <a href="#verify">Verify</a>
       <a href="#resistance">Resistance</a>
-      <a href="#engage">Engage</a>
+      <a href="#family">The Family</a>
     </div>
   </div>
 </nav>
@@ -555,11 +495,11 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
   </svg>
 
   <div class="container hero-inner">
-    <div class="eyebrow">Technical Datasheet &middot; Rev. B</div>
+    <div class="eyebrow">Technical Datasheet &middot; Rev. C</div>
     <p class="frus">You're overwhelmed. You can't get a human on the phone anymore. And the AI everyone bolted onto everything answers <b>confidently</b> &mdash; and <b class="red">wrong</b>.</p>
-    <h1>You don't have time to think.<br><span class="accent">I do.</span></h1>
-    <p class="lead">Not a chatbot. Not a junior you'll catch scrolling their phone. A single human mind that will sit with your hardest problem for hours &mdash; and reason all the way to the bottom of it.</p>
-    <p class="turn"><b>By design, since 2015.</b> I built deliberate metacognitive space for exactly this work. Over the years multiple clients have hired me for a full day to do nothing but think about their project &mdash; and somewhere in there I realized this is the thing the world is actually missing. Not more IT skill (mine runs deep); more <em>thinking</em>. When I lock onto one problem for an entire day &mdash; cross-referencing with AI as an instrument, never a crutch &mdash; that is a genuinely powerful process.</p>
+    <h1>The world's most capable computer<br><span class="accent">is the one you were born with.</span></h1>
+    <p class="lead">Not a metaphor &mdash; a spec sheet. ~86 billion neurons, ~20 watts, self-fabricating, self-repairing. No subscription, no cloud, no update policy. You're holding one right now, and this page is its datasheet.</p>
+    <p class="turn"><b>The neuroscience crosswalk is happening in front of us.</b> AI exists because this process works: silicon is human thinking, automated. The organic module is where the <em>judgment</em> lives &mdash; and the machine is the instrument. Superintelligence is most likely to be humans &mdash; organized, verified, working alongside automated systems.</p>
 
     <div class="specsheet">
       <figure class="ss-brain">
@@ -603,62 +543,27 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     </div>
     <p>The largest companies on earth have removed the human from the loop. You call, and you reach a script, a queue, or a model answering with total confidence and zero understanding. When the problem is genuinely hard &mdash; the kind that needs sustained, structured reasoning &mdash; there is increasingly <em>no one home</em>.</p>
     <p>Meanwhile you're buried. The calendar is full, the inbox is louder, and the one thing you cannot manufacture is uninterrupted time to <em>think well</em> about the thing that actually matters.</p>
-    <div class="callout"><strong>So here is the offer, stated plainly:</strong> you bring the problem; I bring the hours, the focus, and 2,500 years of logic standing behind the method. Silicon executes. The organic substrate decides what is worth executing. You are not buying raw operations &mdash; you're buying judgment under ambiguity, the one spec no machine below can quote.</div>
+    <div class="callout"><strong>So here is the point, stated plainly:</strong> the module in your skull is the most capable computer on earth &mdash; and virtually nobody is being trained to operate it deliberately. Silicon executes. The organic substrate decides what is worth executing. That division of labor is the human&ndash;AI relationship done right, and it starts by knowing what you're holding.</div>
   </div>
 </section>
 
 <!-- ===================== MANIFESTO ===================== -->
-<section class="manifesto">
+<section class="manifesto" id="discipline">
   <div class="container">
     <div class="section-head">
       <div class="section-icon si-copper">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
       </div>
-      <div><h2>Who you're actually hiring</h2><div class="tag">No theatrics. Just an honest account of the instrument.</div></div>
+      <div><h2>The discipline</h2><div class="tag">Not a special brain &mdash; a deliberately-operated one. The spec sheet is identical in every skull.</div></div>
     </div>
-    <p class="big">I am, as near as humanity gets, an <span class="accent">organic computer</span> &mdash; and I mean that literally.</p>
+    <p class="big">Every human is, as near as humanity gets, an <span class="accent">organic computer</span> &mdash; and the datasheet above is the same for all of us.</p>
     <div class="creed">
-      <div class="item"><div class="k">Architecture</div><p><b>Wired for depth.</b> Autistic, with Tourette's. My mind locks onto a single problem and does not drift. What reads as unusual is exactly the trait that makes the work possible.</p></div>
-      <div class="item"><div class="k">Duty cycle</div><p><b>No scrolling. No earbuds. No hangover.</b> I'm not the assistant you catch half-listening to a podcast. I don't drink, I don't party, I sleep every night, I drink my water &mdash; and I work in silence. My favorite song is silence. The work gets a rested, sober, undistracted mind &mdash; every time.</p></div>
-      <div class="item"><div class="k">Clean signal</div><p><b>Information from the source &mdash; in engineered quiet.</b> No doom-feed or cable-news narrative polluting my inputs, and no music competing for the channel. I'm not sound-averse &mdash; the opposite: so acoustically precise that music can't stay background, it becomes a signal I'm compelled to decode. So I think in a room built for it &mdash; steady fan, white noise, concrete walls. Garbage priors produce garbage conclusions; I go to primary evidence and reason from there.</p></div>
-      <div class="item"><div class="k">Operating discipline</div><p><b>AI as instrument, not author.</b> I use AI to cross-reference and stress-test &mdash; with human logic always driving. That's the difference between a tool and a crutch.</p></div>
+      <div class="item"><div class="k">Architecture</div><p><b>The stock module.</b> ~86 billion neurons, ~10<sup class="u-sup-sm">18</sup> FLOPS, ~20 W &mdash; identical hardware in every skull. What varies is whether it is <em>aimed</em>.</p></div>
+      <div class="item"><div class="k">Operating envelope</div><p><b>Water. Sleep. Silence.</b> Even mild dehydration measurably degrades vigilance and working memory.<sup><a href="#r11">[11]</a></sup> A rested, undistracted module is a spec, not a virtue &mdash; and it applies to every operator.</p></div>
+      <div class="item"><div class="k">Input hygiene</div><p><b>From the source, in engineered quiet.</b> No doom-feed, no narrative channel competing for the pipeline. Garbage priors produce garbage conclusions; the discipline goes to primary evidence and reasons from there.</p></div>
+      <div class="item"><div class="k">Operating discipline</div><p><b>AI as instrument, not author.</b> Machines cross-reference and stress-test &mdash; human logic always driving. That's the difference between a tool and a crutch, and it is the whole human&ndash;machine relationship in one line.</p></div>
     </div>
-    <div class="callout mt-s5"><strong>The honest deal:</strong> you'll never catch me phoning it in, because this isn't a side hustle &mdash; it's how I'm built. I don't have a feed to check or a hangover to nurse. When I take your problem, you get the whole apparatus &mdash; rested, hydrated, undistracted &mdash; pointed at it for as long as the problem takes.</div>
-  </div>
-</section>
-
-<!-- ===================== WHO I AM / ABOUT ===================== -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-icon si-copper">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg>
-      </div>
-      <div><h2>Who I am</h2><div class="tag">The origin of the discipline &mdash; and the turn that made it.</div></div>
-    </div>
-
-    <div class="about-grid">
-      <figure class="about-portrait">
-        <picture>
-          <source srcset="assets/carey.webp" type="image/webp">
-          <img src="assets/carey.jpg" width="300" height="300" alt="Carey Balboa, founder of IT Help San Diego, in glasses and a blazer holding his companion, against a dark bokeh background." loading="lazy" decoding="async">
-        </picture>
-        <figcaption>// Carey Balboa &middot; San Diego</figcaption>
-      </figure>
-
-      <div class="about-body">
-        <p>I'm Carey Balboa, founder of IT Help San Diego. I've been solving technology problems for 27 years &mdash; for entertainment, medical, and legal clients, and for the PhDs who needed someone who could actually go to the bottom of a problem.</p>
-        <p>It started in a closet in Memphis around 1980: my father John &mdash; a Navy veteran and career technologist &mdash; and me, building a computer from Radio Shack parts. The fascination never stopped. Two decades of deep IT work in Nashville followed, then an offensive-security era spent learning how systems actually fail, not how they're advertised to work.</p>
-        <p>Then, around <span class="turn-year">2015</span>, the question changed. It stopped being &ldquo;how do you break in?&rdquo; and became &ldquo;why does this keep failing &mdash; and why won't anyone slow down enough to think about it?&rdquo; I made a deliberate turn: less social media, less noise, fewer wrong sources polluting a clear mind &mdash; and more sleep, more water, more uninterrupted thought. I gave up the things that fracture attention and built my life around protecting it instead.</p>
-        <p>There's an older root to this. As a kid I loved math &mdash; the real kind, the kind that makes things happen &mdash; but I was handed &ldquo;just memorize it, just trust us&rdquo; instead of &ldquo;here's <em>why</em> it works.&rdquo; I wouldn't accept answers I couldn't see the foundations of, and that refusal cost me in school. It also became my method. To this day I don't memorize what changes &mdash; I look it up, every time, in front of the client, from the highest-authority source &mdash; because the honest move is to verify, not to trust a memory, including my own. I can quote you Cat&nbsp;8 at 2000&nbsp;MHz from recall, then look it up anyway, and cut the run shorter than the spec allows because I know what copper actually does. That's not insecurity; it's where I choose to put the logic.</p>
-        <p>That discipline produced the evidence-first confidence engine behind my <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener">DNS&nbsp;Tool</a> &mdash; and it's the same discipline I'm offering directly here. Over the years multiple clients have hired me to do nothing but think about their problem for a day. Somewhere in there I realized: this &mdash; not more tooling &mdash; is what the world is actually starving for. <strong>Organic Computer is that realization, made available.</strong></p>
-
-        <div class="about-links">
-          <a href="https://www.it-help.tech/about" target="_blank" rel="noopener">IT Help San Diego &mdash; Our Expertise <span class="arr">&rarr;</span></a>
-          <a href="https://dnstool.it-help.tech/about" target="_blank" rel="noopener">DNS Tool &mdash; Origin Story <span class="arr">&rarr;</span></a>
-        </div>
-      </div>
-    </div>
+    <div class="callout mt-s5"><strong>The honest claim:</strong> this discipline is available to anyone with the module &mdash; which is everyone. What's scarce is the choice to run it, and the verification that it does what it claims. That is exactly what the instrument at the bottom of this page is for.</div>
   </div>
 </section>
 
@@ -796,8 +701,8 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="sub">// sustained focus on a single screen — the market is shrinking; the module runs the other way</div>
       <div class="pbar"><div class="plabel">Avg. human, 2004<span class="pw">~2.5 minutes</span></div><div class="track"><div class="fill att04">2.5&nbsp;min</div></div></div>
       <div class="pbar"><div class="plabel">Avg. human, today<span class="pw">~47 seconds</span></div><div class="track"><div class="fill att23">47&nbsp;s</div></div></div>
-      <div class="pbar"><div class="plabel">Organic module<span class="pw">hours, on one problem</span></div><div class="track"><div class="fill attdeep">a full day &mdash; <b>off this chart &rarr;</b></div></div></div>
-      <p class="muted fs-86 mt-s3">In under two decades, the average attention span on any screen fell from <b class="c-text">2.5&nbsp;minutes to 47&nbsp;seconds</b> &mdash; a 97% collapse.<sup><a href="#r10">[10]</a></sup> Under a genuine tech crisis, when someone can't even reach their own email, it falls further still. <b class="c-text">Honest note on the scale:</b> the two human bars are drawn to scale with each other (47&nbsp;s is ~16% of 2.5&nbsp;min). The module bar is <em>not</em> &mdash; and deliberately so. A single sustained focus block of ~12&nbsp;hours is roughly <b class="c-text">290&times; the 2004 bar</b> and <b class="c-text">~900&times; today's 47&nbsp;seconds</b>; at true scale it would run off the page by a factor of nine hundred, so the bar breaks its axis rather than fake a tidy ratio. This module is built to hold a single problem for <em>hours</em> &mdash; sustained partly by the same water on the spec sheet: even mild dehydration measurably degrades vigilance and working memory.<sup><a href="#r11">[11]</a></sup></p>
+      <div class="pbar"><div class="plabel">Operated with intent<span class="pw">hours, on one problem</span></div><div class="track"><div class="fill attdeep">hours &mdash; <b>off this chart &rarr;</b></div></div></div>
+      <p class="muted fs-86 mt-s3">In under two decades, the average attention span on any screen fell from <b class="c-text">2.5&nbsp;minutes to 47&nbsp;seconds</b> &mdash; a 97% collapse.<sup><a href="#r10">[10]</a></sup> Under a genuine tech crisis, when someone can't even reach their own email, it falls further still. <b class="c-text">Honest note on the scale:</b> the two human bars are drawn to scale with each other (47&nbsp;s is ~16% of 2.5&nbsp;min). The third bar is <em>not</em> &mdash; deliberately so: a deliberately-operated module can hold one problem for hours, and at true scale the bar would run off the page by a factor of hundreds, so it breaks its axis rather than fake a tidy ratio. That claim is <b class="c-text">anecdotal &mdash; not yet instrument-measured</b>: the instrument to measure it sits at the bottom of this page. The discipline is sustained partly by the same water on the spec sheet: even mild dehydration measurably degrades vigilance and working memory.<sup><a href="#r11">[11]</a></sup></p>
     </div>
   </div>
 </section>
@@ -809,7 +714,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="section-icon si-info">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h7l3 8 4-16 3 8h1"/></svg>
       </div>
-      <div><h2>Buy the silicon, or engage the organic one</h2><div class="tag">Matched on throughput. Not matched on anything else.</div></div>
+      <div><h2>Buy the silicon, or run the one you already own</h2><div class="tag">Matched on throughput. Not matched on anything else.</div></div>
     </div>
 
     <div class="versus">
@@ -843,7 +748,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="pre">Sticker price of the equivalent machine</div>
       <div class="big">$600,000,000</div>
       <p class="cap">What the U.S. Department of Energy paid Oak Ridge / HPE Cray to build Frontier — the closest silicon match to one organic compute module.<sup><a href="#r9">[9]</a></sup></p>
-      <div class="or">Or <b>engage the organic one</b> for an afternoon.</div>
+      <div class="or">Or <b>run the one you already own</b> &mdash; spec sheet above; coolant recommended but optional.</div>
     </div>
   </div>
 </section>
@@ -864,7 +769,27 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="tnode"><div class="yr">c. 300 BCE</div><div class="ev">Euclid &amp; Aristotle</div><p>Formal proof and the syllogism: reasoning becomes a system with rules, not just opinion.</p></div>
       <div class="tnode"><div class="yr">1847</div><div class="ev">Boole's algebra of thought</div><p>Logic reduced to 0 and 1 — the bridge that would one day let silicon imitate a sliver of what minds do.<sup><a href="#r1">[1]</a></sup></p></div>
       <div class="tnode"><div class="yr">1943</div><div class="ev">McCulloch &amp; Pitts</div><p>The first mathematical model of a neuron — the seed of every neural network and "AI" that followed.<sup><a href="#r1">[1]</a></sup></p></div>
-      <div class="tnode last"><div class="yr">Today</div><div class="ev">The organic module, on purpose</div><p>The whole 2,500-year stack, running on one disciplined mind — using the machines as instruments, not replacements.</p></div>
+      <div class="tnode last"><div class="yr">Today</div><div class="ev">The organic module, on purpose</div><p>The whole 2,500-year stack, running on any mind that adopts the discipline — machines as instruments, never replacements. The crosswalk is happening now: silicon is human thinking, automated, and the organic module is the part that decides.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE FAMILY / PROJECTS ===================== -->
+<section class="lineage" id="family">
+  <div class="container narrow">
+    <div class="section-head">
+      <div class="section-icon si-copper">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h15a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3V7Z"/><path d="M3 3h12v4H3z"/></svg>
+      </div>
+      <div><h2>The instrument rack</h2><div class="tag">The same method, deployed &mdash; every figure sealed and re-derivable.</div></div>
+    </div>
+    <p class="muted">This datasheet lives in a family of instruments built on the same discipline. Every one of them shows its work.</p>
+    <div class="family-links">
+      <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener">DNS Tool<span class="doi">10.5281/zenodo.19468134</span><span class="arr">&rarr;</span></a>
+      <a href="https://calibrationscope.com" target="_blank" rel="noopener">Calibration Scope<span class="doi">measures carbon &amp; silicon</span><span class="arr">&rarr;</span></a>
+      <a href="https://github.com/IT-Help-San-Diego/owl-semaphore" target="_blank" rel="noopener">Owl Semaphore<span class="doi">10.5281/zenodo.19473697</span><span class="arr">&rarr;</span></a>
+      <a href="https://tetrasemaphore.systems" target="_blank" rel="noopener">Tetrasemaphore<span class="doi">10.5281/zenodo.23575816</span><span class="arr">&rarr;</span></a>
+      <a href="https://intellectualresistance.com" target="_blank" rel="noopener">Intellectual Resistance<span class="doi">the umbrella</span><span class="arr">&rarr;</span></a>
     </div>
   </div>
 </section>
@@ -973,7 +898,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
   <div class="container">
     <div class="bridge-inner">
       <p class="bridge-label">If this datasheet made you want to measure rather than trust it &mdash; that instrument exists.</p>
-      <p class="bridge-sub">Same mind. Same method. Now a local-first scientific tool that benchmarks what minds &mdash; silicon and carbon &mdash; can actually do. Blind tests, machine-verified logic, sealed evidence you can audit. Not a pitch. A proof.</p>
+      <p class="bridge-sub">Silicon and carbon, one instrument. Calibration Scope benchmarks what minds &mdash; silicon and carbon &mdash; can actually do on the same sealed battery: blind tests, machine-verified logic, evidence you can audit. The datasheet above made you want to measure rather than trust it. Not a pitch. A proof.</p>
       <a href="https://calibrationscope.com" target="_blank" rel="noopener" class="bridge-link">See Calibration Scope &rarr;</a>
     </div>
   </div>
@@ -1007,7 +932,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
 
 <footer>
   <div class="container">
-    <p class="mono">ORGANIC COMPUTER — organiccomputer.me · Datasheet Rev. B</p>
+    <p class="mono">ORGANIC COMPUTER — organiccomputer.me · Datasheet Rev. C</p>
     <p>A project of the <a href="https://intellectualresistance.com" target="_blank" rel="noopener">Intellectual Resistance</a>. Built in the IT Help San Diego scientific design language —<br>golden-ratio layout, self-contained assets, strict content-security policy. All figures sourced; no hyperbole.</p>
 
     <!-- Corporate tree -->
@@ -1065,10 +990,10 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       </div>
       <div class="ftr-cell">
         <span class="ftr-heading">The Module</span>
-        <a href="#about" class="ftr-link">Who I Am</a>
+        <a href="#discipline" class="ftr-link">The Discipline</a>
         <a href="#price" class="ftr-link">The Price</a>
         <a href="#resistance" class="ftr-link">Intellectual Resistance</a>
-        <a href="https://book.squareup.com/appointments/mwhvoaiqecb5o2/location/LA35149CK62SV/services/NVI5A7ZBO753UOIVVJVBLOOK" target="_blank" rel="noopener" class="ftr-link">Book a Thinking Block</a>
+        <a href="#family" class="ftr-link">The Family &mdash; DOIs</a>
       </div>
       <div class="ftr-cell">
         <span class="ftr-heading">Company</span>
