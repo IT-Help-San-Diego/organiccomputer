@@ -7,14 +7,13 @@
 - [Organic Computer](https://organiccomputer.me/) — the datasheet: the human mind spec'd as hardware, benchmarked against a $600M Frontier-class supercomputer, with sourced figures.
 - [The Discipline](https://organiccomputer.me/#discipline) — the universal operating discipline: water, sleep, silence, primary sources, AI as instrument.
 - [The Verification Principle](https://organiccomputer.me/#verify) — the Bayesian anti-dogmatism that governs the method.
-- [The Instrument Rack](https://organiccomputer.me/#family) — the research family: DNS Tool, Calibration Scope, Owl Semaphore, Tetrasemaphore, with DOIs.
+- [The Instrument Rack](https://organiccomputer.me/#family) — the research family: DNS Tool, Calibration Scope, Tetrasemaphore, with DOIs.
 
 ## Related properties
 
 - [IT Help San Diego](https://www.it-help.tech) — the company behind the research.
 - [DNS Tool](https://dnstool.it-help.tech/) — the deployed OSINT DNS/email-security analyzer (DOI 10.5281/zenodo.19468134).
 - [Calibration Scope](https://calibrationscope.com/) — measures reasoning in any subject, on any substrate.
-- [Owl Semaphore](https://github.com/IT-Help-San-Diego/owl-semaphore) — DOI 10.5281/zenodo.19473697.
 - [Tetrasemaphore](https://tetrasemaphore.systems/) — DOI 10.5281/zenodo.23575816.
 - [Intellectual Resistance](https://intellectualresistance.com/) — the umbrella.
 
