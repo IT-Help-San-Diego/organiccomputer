@@ -5,7 +5,7 @@ the **organiccomputer.me** repository. Read this fully before making any edit.
 
 / A project of the **Intellectual Resistance** (intellectualresistance.com).
 / A product surface for IT Help San Diego — bookings always route through
-/ schedule.it-help.tech; this site is the datasheet, not a booking system.
+/ book.squareup.com; this site is the datasheet, not a booking system.
 
 ## What this site is
 
