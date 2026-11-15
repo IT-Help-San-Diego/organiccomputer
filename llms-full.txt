@@ -1,19 +1,25 @@
 # Organic Computer — Full Reference
 
-> organiccomputer.me — the human mind, spec'd like hardware, and benchmarked
-> against the supercomputer you'd otherwise have to buy. A project of the
-> Intellectual Resistance, under IT Help San Diego Inc. This page is a
-> datasheet, not a booking surface: professional consulting routes through
-> https://book.squareup.com/appointments/mwhvoaiqecb5o2/location/LA35149CK62SV/services.
+> organiccomputer.me: the human mind, spec'd like hardware and benchmarked
+> against the supercomputer you'd otherwise have to buy. A datasheet, with its
+> sources listed. A project of the Intellectual Resistance, operated through
+> IT Help San Diego Inc.
+
+Changed on 15 November 2026 (UTC): this file earlier linked a booking page for
+professional consulting, in its opening lines and under "Operating discipline",
+and its description opened with a paragraph on how scarce careful thinking is in
+business. The links and that paragraph are withdrawn, and so is the "Operating
+discipline" section, which repeated "The discipline" below in words the page no
+longer uses. The site is a datasheet. It offers no service. In the same change
+the floor space given for Frontier, earlier "~2 tennis courts", became Oak Ridge
+National Laboratory's figure, and the circuit passage under "The Intellectual
+Resistance" was revised and labeled an analogy.
 
 ## What this is
 
-The scarcest resource in business today is not information — it is a person who
-will actually sit and think about a problem. Executives are overwhelmed; support
-lines are automated; AI bolted onto everything answers fast, confident, and
-often wrong. Organic Computer is the deliberate inverse told as a datasheet:
-the human brain presented as a literal compute substrate, spec'd like hardware
-and benchmarked against the machine you'd otherwise have to buy.
+Organic Computer is a datasheet for the human brain. It presents the brain as a
+compute substrate, specified the way hardware is specified, and sets it beside
+an exascale supercomputer.
 
 The point is universal, not personal: every human is an organic computer, with
 an identical spec sheet. What varies is whether the module is operated
@@ -42,10 +48,11 @@ premise.
 ## The hardware equivalence
 
 To match the organic module's throughput you would buy a Frontier-class
-supercomputer: ~1.35 EFLOPS, ~24.6 MW of power, ~2 tennis courts of floor space,
-and a sticker price of about $600,000,000 (U.S. Department of Energy / Oak Ridge
-National Laboratory; TOP500 Nov 2024, No. 2: 1.353 EFLOPS Rmax, ~24,600 kW). The
-organic module runs on ~20 W and a glass of water —
+supercomputer: ~1.35 EFLOPS, ~24.6 MW of power, more than 7,300 square feet of
+floor space, and a sticker price of about $600,000,000 (U.S. Department of
+Energy / Oak Ridge National Laboratory; TOP500 Nov 2024, No. 2: 1.353 EFLOPS
+Rmax, ~24,600 kW; floor space from Oak Ridge National Laboratory, 14 Nov 2023).
+The organic module runs on ~20 W and a glass of water —
 and, unlike the silicon, it understands the problem.
 
 ## The discipline
@@ -90,17 +97,21 @@ The same method, deployed — every figure sealed and re-derivable:
 
 ## The Intellectual Resistance
 
-Resistance, in a circuit, is what makes current usable. Thinking is the same —
-friction, doubt, and the deliberate pause before the answer are not the
-obstacle; they are the work. Organic Computer is a project of the Intellectual
-Resistance (https://intellectualresistance.com), the larger body of work on
-logic, reason, and thinking that shows its work.
+In a circuit, resistance is what makes current usable: it sets the terms and
+drops the voltage to something that won't burn the system down. Thinking has the
+same shape. Friction, doubt, and the deliberate pause before the answer are not
+the obstacle. They are the work.
 
-## Operating discipline
+And a line with no resistor at its end doesn't carry more signal - it rings: the
+wave reflects, returns over what is still arriving, and the receiver cannot tell
+the message from its own echo. That is what a mind does with its own prior when
+nothing stops it.
 
-The page's operating discipline is stated as a universal spec: no scrolling, no
-earbuds, no hangover; water, sleep, silence; AI as instrument, never author.
-Professional consulting: https://book.squareup.com/appointments/mwhvoaiqecb5o2/location/LA35149CK62SV/services.
+Analogy: nothing is derived from it.
+
+Organic Computer is a project of the Intellectual Resistance
+(https://intellectualresistance.com), the larger body of work on logic, reason,
+and thinking that shows its work.
 
 ## License
 
