@@ -37,3 +37,14 @@ invalidates the cache. Local preview: open `index.html` in a browser.
 No toolchain required. Edit `index.html`, open it in a browser. See `AGENTS.md`
 for the quality gates (Lighthouse 100s, Observatory A+/≥120, strict CSP,
 sourcing discipline).
+
+## License
+
+The text of the datasheet is licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0). `LICENSE.txt` carries the legal code, the same text
+the Tetrasemaphore and Owl Semaphore repositories carry. The images under
+`assets/` are not covered by that license until their provenance is recorded
+here. The page itself prints no license line; attribution is reached through
+the ORCID, GitHub and DOI records linked in its footer. `LICENSE.txt` stays in
+the repository and is not uploaded to the site: the deploy workflow excludes
+`*.txt` from the asset sync and copies only the named text endpoints.
