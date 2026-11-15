@@ -57,8 +57,8 @@ The license does not extend to four files that were removed on 31 October 2026
 and remain in this repository's history: an Owl Semaphore badge and a portrait
 photograph of the site owner.
 
-The page prints no license line. For credit, its footer links the ORCID and
-GitHub records. `llms.txt` and `llms-full.txt`, which the site serves, state the
+The page prints the license in its footer, with a link to `PROVENANCE.md`. For
+credit, its footer links the ORCID and GitHub records. `llms.txt` and `llms-full.txt`, which the site serves, state the
 license. The deploy workflow does not upload `LICENSE.txt`: its asset sync
 excludes `*.txt` and it copies only the named text endpoints. A separate code
 license is not declared.
