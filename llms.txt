@@ -2,6 +2,11 @@
 
 > The human mind, spec'd like hardware: the organic compute module behind your eyes, benchmarked against the supercomputer you'd otherwise have to buy. A datasheet, with its sources listed. A project of the Intellectual Resistance, operated through IT Help San Diego Inc.
 
+Changed on 15 November 2026 (UTC): this file earlier called the site "a
+datasheet, not a pitch" and described IT Help San Diego as "the company behind
+the research". It now says the datasheet lists its sources and names the company
+as the operator.
+
 ## Main
 
 - [Organic Computer](https://organiccomputer.me/) — the datasheet: the human mind spec'd as hardware, benchmarked against a $600M Frontier-class supercomputer, with sourced figures.
@@ -31,8 +36,3 @@ Trademark rights are not licensed (Section 2(b)(2)).
 Changed on 15 November 2026 (UTC): this file earlier said that access was not a
 license to redistribute, train on or build derivative products from this site's
 content, and that all rights were reserved. That notice is withdrawn.
-
-Changed on 15 November 2026 (UTC): this file earlier called the site "a
-datasheet, not a pitch" and described IT Help San Diego as "the company behind
-the research". It now says the datasheet lists its sources and names the company
-as the operator.

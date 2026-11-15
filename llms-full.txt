@@ -5,6 +5,16 @@
 > sources listed. A project of the Intellectual Resistance, operated through
 > IT Help San Diego Inc.
 
+Changed on 15 November 2026 (UTC): this file earlier linked a booking page for
+professional consulting, in its opening lines and under "Operating discipline",
+and its description opened with a paragraph on how scarce careful thinking is in
+business. The links and that paragraph are withdrawn, and so is the "Operating
+discipline" section, which repeated "The discipline" below in words the page no
+longer uses. The site is a datasheet. It offers no service. In the same change
+the floor space given for Frontier, earlier "~2 tennis courts", became Oak Ridge
+National Laboratory's figure, and the circuit passage under "The Intellectual
+Resistance" was replaced by one marked as an analogy.
+
 ## What this is
 
 Organic Computer is a datasheet for the human brain. It presents the brain as a
@@ -38,10 +48,11 @@ premise.
 ## The hardware equivalence
 
 To match the organic module's throughput you would buy a Frontier-class
-supercomputer: ~1.35 EFLOPS, ~24.6 MW of power, ~2 tennis courts of floor space,
-and a sticker price of about $600,000,000 (U.S. Department of Energy / Oak Ridge
-National Laboratory; TOP500 Nov 2024, No. 2: 1.353 EFLOPS Rmax, ~24,600 kW). The
-organic module runs on ~20 W and a glass of water —
+supercomputer: ~1.35 EFLOPS, ~24.6 MW of power, more than 7,300 square feet of
+floor space, and a sticker price of about $600,000,000 (U.S. Department of
+Energy / Oak Ridge National Laboratory; TOP500 Nov 2024, No. 2: 1.353 EFLOPS
+Rmax, ~24,600 kW; floor space from Oak Ridge National Laboratory, 14 Nov 2023).
+The organic module runs on ~20 W and a glass of water —
 and, unlike the silicon, it understands the problem.
 
 ## The discipline
@@ -86,11 +97,22 @@ The same method, deployed — every figure sealed and re-derivable:
 
 ## The Intellectual Resistance
 
-Resistance, in a circuit, is what makes current usable. Thinking is the same —
-friction, doubt, and the deliberate pause before the answer are not the
-obstacle; they are the work. Organic Computer is a project of the Intellectual
-Resistance (https://intellectualresistance.com), the larger body of work on
-logic, reason, and thinking that shows its work.
+A signal line with no terminating resistor doesn't carry more signal - it rings.
+The wave hits the end, reflects, and comes back over what's still arriving, and
+the receiver can't tell the message from its own echo. The resistor doesn't add
+anything. It stops the line from lying to you.
+
+Thinking has the same shape. Friction, doubt, the deliberate pause before the
+answer: that isn't the obstacle. It's the part that keeps your own echo out of
+the signal.
+
+The circuit is analogy, not proof. Termination is invoked only as a picture of
+how an unchecked signal returns as its own evidence - never as a claim about how
+reasoning works.
+
+Organic Computer is a project of the Intellectual Resistance
+(https://intellectualresistance.com), the larger body of work on logic, reason,
+and thinking that shows its work.
 
 ## License
 
@@ -105,10 +127,3 @@ Trademark rights are not licensed (Section 2(b)(2)).
 Changed on 15 November 2026 (UTC): this file earlier said that access was not a
 license to redistribute, train on or build derivatives from this content, and
 that all rights were reserved. That notice is withdrawn.
-
-Changed on 15 November 2026 (UTC): this file earlier linked a booking page for
-professional consulting, in its opening lines and under "Operating discipline",
-and its description opened with a paragraph on how scarce careful thinking is in
-business. The links and that paragraph are withdrawn, and so is the "Operating
-discipline" section, which repeated "The discipline" above in words the page no
-longer uses. The site is a datasheet. It offers no service.
