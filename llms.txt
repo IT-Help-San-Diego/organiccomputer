@@ -1,6 +1,6 @@
 # Organic Computer
 
-> The human mind, spec'd like hardware — the organic compute module behind your eyes, benchmarked against the supercomputer you'd otherwise have to buy. A datasheet, not a pitch. A project of the Intellectual Resistance (IT Help San Diego Inc.).
+> The human mind, spec'd like hardware: the organic compute module behind your eyes, benchmarked against the supercomputer you'd otherwise have to buy. A datasheet, with its sources listed. A project of the Intellectual Resistance, operated through IT Help San Diego Inc.
 
 ## Main
 
@@ -11,7 +11,7 @@
 
 ## Related properties
 
-- [IT Help San Diego](https://www.it-help.tech) — the company behind the research.
+- [IT Help San Diego Inc.](https://www.it-help.tech): the operator.
 - [DNS Tool](https://dnstool.it-help.tech/) — the deployed OSINT DNS/email-security analyzer (DOI 10.5281/zenodo.19468134).
 - [Calibration Scope](https://calibrationscope.com/) — measures reasoning in any subject, on any substrate.
 - [Tetrasemaphore](https://tetrasemaphore.systems/) — DOI 10.5281/zenodo.23575816.
@@ -31,3 +31,8 @@ Trademark rights are not licensed (Section 2(b)(2)).
 Changed on 15 November 2026 (UTC): this file earlier said that access was not a
 license to redistribute, train on or build derivative products from this site's
 content, and that all rights were reserved. That notice is withdrawn.
+
+Changed on 15 November 2026 (UTC): this file earlier called the site "a
+datasheet, not a pitch" and described IT Help San Diego as "the company behind
+the research". It now says the datasheet lists its sources and names the company
+as the operator.
