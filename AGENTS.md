@@ -3,9 +3,9 @@
 Canonical, durable source of truth for all AI agents and human contributors on
 the **organiccomputer.me** repository. Read this fully before making any edit.
 
-/ A project of the **Intellectual Resistance** (intellectualresistance.com).
-/ A product surface for IT Help San Diego — bookings always route through
-/ book.squareup.com; this site is the datasheet, not a booking system.
+/ A project of the **Intellectual Resistance** (intellectualresistance.com),
+/ operated through IT Help San Diego Inc. This site is a datasheet. It offers
+/ no service and carries no booking link.
 
 ## What this site is
 
