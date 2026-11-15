@@ -13,7 +13,20 @@ permissions:
   contents: read
 
 jobs:
+  # The repository's own gate. It runs on every pull request and before every
+  # deploy. The deploy job needs it, so a page that fails its own check is not
+  # uploaded.
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Gate (verify.sh)
+        run: make check
+
   deploy:
+    needs: verify
     if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     env:
@@ -126,9 +139,3 @@ jobs:
           done
           echo "::error::Invalidation $ID did not complete in time."
           exit 1
-
-  pr-note:
-    if: ${{ github.event_name == 'pull_request' }}
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Deploy runs only on push to main; this PR job keeps Actions from reporting 'No jobs were run'."
