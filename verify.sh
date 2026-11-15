@@ -74,7 +74,7 @@ if os.path.exists("bimi-logo.svg"):
 # 6. Stale-content guard: forbidden phrases must not appear in ANY shipped text file
 #    (case-insensitive — catches uppercase SVG <text> the way a global rename can miss).
 #    Edit FORBIDDEN to match this site's retired wording.
-FORBIDDEN = ["done right", "book.squareup.com"]
+FORBIDDEN = ["done right", "book.squareup.com", "v = i·r"]
 shipped_ext = (".html", ".svg", ".txt", ".xml", ".json", ".webmanifest")
 skip_dirs = (".git", ".github", "node_modules")
 shipped = {}
