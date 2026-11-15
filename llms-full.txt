@@ -13,7 +13,7 @@ discipline" section, which repeated "The discipline" below in words the page no
 longer uses. The site is a datasheet. It offers no service. In the same change
 the floor space given for Frontier, earlier "~2 tennis courts", became Oak Ridge
 National Laboratory's figure, and the circuit passage under "The Intellectual
-Resistance" was replaced by one marked as an analogy.
+Resistance" was revised and labeled an analogy.
 
 ## What this is
 
@@ -97,18 +97,17 @@ The same method, deployed — every figure sealed and re-derivable:
 
 ## The Intellectual Resistance
 
-A signal line with no terminating resistor doesn't carry more signal - it rings.
-The wave hits the end, reflects, and comes back over what's still arriving, and
-the receiver can't tell the message from its own echo. The resistor doesn't add
-anything. It stops the line from lying to you.
+In a circuit, resistance is what makes current usable: it sets the terms and
+drops the voltage to something that won't burn the system down. Thinking has the
+same shape. Friction, doubt, and the deliberate pause before the answer are not
+the obstacle. They are the work.
 
-Thinking has the same shape. Friction, doubt, the deliberate pause before the
-answer: that isn't the obstacle. It's the part that keeps your own echo out of
-the signal.
+And a line with no resistor at its end doesn't carry more signal - it rings: the
+wave reflects, returns over what is still arriving, and the receiver cannot tell
+the message from its own echo. That is what a mind does with its own prior when
+nothing stops it.
 
-The circuit is analogy, not proof. Termination is invoked only as a picture of
-how an unchecked signal returns as its own evidence - never as a claim about how
-reasoning works.
+Analogy: nothing is derived from it.
 
 Organic Computer is a project of the Intellectual Resistance
 (https://intellectualresistance.com), the larger body of work on logic, reason,
