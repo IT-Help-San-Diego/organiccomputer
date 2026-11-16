@@ -25,6 +25,7 @@ headers.
 | `infra/cloudfront/security-headers.json` | CSP + security headers (source of truth) |
 | `.github/workflows/deploy.yml` | S3 sync + CloudFront invalidation on push to `main` |
 | `AGENTS.md` | Governance — **read before editing** |
+| `CHANGELOG.md` | Changes that are not corrections, newest first (not deployed) |
 
 ## Deploy
 
