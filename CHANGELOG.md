@@ -7,6 +7,33 @@ https://www.it-help.tech/corrections/, and the page links its own entry from its
 This file begins with the entry below. Earlier changes are in this repository's history. Newest first.
 Each heading gives the day in UTC, and the day in Los Angeles where the two differ.
 
+## 16 November 2026 (UTC; 15 November in Los Angeles): narrow screens
+
+The page no longer scrolls sideways on a phone or a tablet. Measured in Chromium before this change, the
+document was 399 px wide in a window 320, 375 or 390 px wide, and 803 px wide in a window 684 to 800 px wide
+(eight widths measured). After it, the document is exactly as wide as the window at each of 68 widths from
+320 to 1920 px.
+
+Everything that changed is in the page's one style block:
+
+- The specification table needs 373 px as three columns. At 640 px and below, each row takes two lines: the
+  parameter beside its value, then the basis. The cells and their order are the same.
+- The name and the domain tag in the header take two lines when the window is narrower than the 350 px they
+  need together. The header's link row needs 953 px beside the name at full spacing: below 955 px its spacing
+  tightens, and below 894 px it wraps to a second line inside the bar. From 955 px up the header is as it was.
+- The four project links are full-width rows at 400 px and below.
+- The price follows the width at 410 px and below, so its twelve characters stay inside their box. At 375 px
+  wide it is set at 36.9 px, where it was 41.6 px and wider than the box.
+- Three style rules that no element used were removed: `.resist h2 .strike`, `.hero .frus .red` and `.ohm`.
+
+No word, number, link or image changed: the page's bytes after the style block are identical. Full-page
+screenshots at 1080, 1280, 1440 and 1920 px wide are byte-for-byte the same before and after. The style
+block's hash changed with the block and is pinned again in the page's own policy and in the response
+header policy. This is recorded here and not in the corrections index because nothing a reader was told
+changed.
+
+The measurements are from Chromium 141 and Chrome 157. Safari was not measured.
+
 ## 16 November 2026 (UTC; 15 November in Los Angeles)
 
 The heading of the Resistance section lost its struck-through first line. It read "Resistance is

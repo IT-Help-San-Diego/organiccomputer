@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-Xb0/jaI6znc+LuOne3wM2aM9soMMpjTRBoNlCFu9DF0='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-DzjiYkOEaiWZmLwhONvUQA4IUgkbLe+hoKfBbxcwmUU='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
@@ -92,15 +92,23 @@ sup a{color:var(--info);font-size:.62em;font-weight:700;padding:0 .1em}
 /* ============================================================ NAV */
 .nav{position:sticky;top:0;z-index:50;background:rgba(13,17,23,.82);
   backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--border-soft)}
-.nav .container{display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav .container{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);height:56px}
 .nav .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.82rem;color:var(--text);letter-spacing:.04em}
 .nav .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--success);box-shadow:0 0 9px var(--success)}
-.nav .links{display:flex;gap:var(--s4);font-size:.82rem}
+/* The link row never runs off the edge. Beside the name it needs 953px at full spacing: below 955px
+   its spacing tightens, and below 894px it wraps to a second line inside the bar. */
+.nav .links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:0 var(--s4);font-size:.82rem}
 .nav .links a{color:var(--text-muted)}
 .nav .links a:hover{color:var(--gold)}
 .domain-tag{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:lowercase;
   color:var(--gold);border:1px solid rgba(212,168,83,.3);background:rgba(212,168,83,.07);padding:.1rem .4rem;border-radius:4px}
+@media(max-width:954px){.nav .links{column-gap:var(--s3)}}
 @media(max-width:680px){.nav .links{display:none}}
+/* PHONE WIDTH: the name and its domain tag need 298px side by side; in less, the tag takes a second line. */
+@media(max-width:520px){
+  .nav .container{height:auto;min-height:56px}
+  .nav .brand{flex-wrap:wrap;row-gap:.15rem}
+}
 
 /* ============================================================ HERO */
 .hero{position:relative;background:linear-gradient(170deg,#0a1628 0%,#0d1117 44%,#111a2e 74%,#0d1117 100%);
@@ -112,7 +120,6 @@ sup a{color:var(--info);font-size:.62em;font-weight:700;padding:0 .1em}
 .hero-inner{position:relative;z-index:2}
 .hero .frus{font-family:var(--display);font-size:clamp(1.05rem,2.4vw,1.5rem);font-weight:600;color:var(--text-muted);line-height:1.4;margin-bottom:var(--s3)}
 .hero .frus b{color:var(--text);font-weight:600}
-.hero .frus .red{color:#f85149;font-weight:700}
 .hero h1{font-size:clamp(2.1rem,5.6vw,3.6rem);font-weight:680;letter-spacing:-.025em;margin-bottom:var(--s4);max-width:18ch}
 .hero h1 .accent{color:var(--gold)}
 .hero .lead{font-size:clamp(1.05rem,2vw,1.28rem);color:var(--text);max-width:48ch;font-weight:300}
@@ -184,6 +191,13 @@ section{padding:var(--s6) 0;position:relative}
 .family-links a:hover{border-color:var(--gold);color:var(--gold)}
 .family-links a .arr{color:var(--copper)}
 .family-links .doi{font-family:var(--mono);font-size:.66rem;font-weight:400;color:var(--text-dim);display:block;margin-top:.15rem;letter-spacing:.02em}
+/* PHONE WIDTH: the longest link needs 325px on one line. In less, each link is a full-width row:
+   its name over its second line, the arrow at the right. */
+@media(max-width:400px){
+  .family-links a{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:var(--s3);row-gap:0;width:100%}
+  .family-links .doi{grid-row:2}
+  .family-links .arr{grid-area:1 / 2 / 3 / 3}
+}
 
 /* ============================================================ BRAIN CENTERPIECE */
 .module{background:radial-gradient(80% 120% at 50% 0%,#10151f,#0d1117 70%)}
@@ -217,6 +231,19 @@ section{padding:var(--s6) 0;position:relative}
 .datasheet .val{font-family:var(--mono);color:var(--gold);white-space:nowrap}
 .datasheet .val.wrap{white-space:normal}
 .datasheet .note{color:var(--text-muted);font-size:.85rem}
+/* PHONE WIDTH: as three columns the table needs 373px. In less, each row takes two lines: the parameter beside its
+   value, then the basis. Same cells in the same order; the header row is laid out the same way. */
+@media(max-width:640px){
+  .datasheet,.datasheet caption,.datasheet thead,.datasheet tbody{display:block}
+  .datasheet{border:none;border-radius:0;overflow:visible}
+  .datasheet thead,.datasheet tbody{border:1px solid var(--border);overflow:hidden}
+  .datasheet thead{border-bottom:none;border-radius:14px 14px 0 0}
+  .datasheet tbody{border-top:none;border-radius:0 0 14px 14px}
+  .datasheet tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .datasheet th:last-child,.datasheet .note{grid-column:1 / -1;padding-top:0}
+  .datasheet th:not(:last-child),.datasheet .param,.datasheet .val{border-bottom:none;padding-bottom:.3rem}
+  .datasheet .param{width:auto}
+}
 .tag-organic{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--success);
   border:1px solid rgba(63,185,80,.3);background:rgba(63,185,80,.08);padding:.05rem .35rem;border-radius:3px;margin-left:.4rem;vertical-align:middle}
 
@@ -267,6 +294,9 @@ section{padding:var(--s6) 0;position:relative}
 .pricetag .cap{color:var(--text-muted);font-size:.95rem;max-width:40ch;margin:0 auto}
 .pricetag .or{margin-top:var(--s4);font-family:var(--display);font-size:1.2rem;color:var(--text)}
 .pricetag .or b{color:var(--gold)}
+/* PHONE WIDTH: the price is twelve characters and needs 291px at 2.6rem. Below 410px it follows the width,
+   so it stays inside its box. */
+@media(max-width:410px){.pricetag .big{font-size:clamp(1.8rem,calc((100vw - 6.6rem)/7.3),2.6rem)}}
 
 /* ============================================================ LINEAGE TIMELINE */
 .lineage{background:linear-gradient(180deg,#0b0e14,#0d1117)}
@@ -328,10 +358,8 @@ section{padding:var(--s6) 0;position:relative}
 .resist .circuit{width:100%;height:auto;margin:var(--s4) 0;display:block}
 .resist .rband{text-align:center;max-width:60ch;margin:0 auto}
 .resist h2{font-size:clamp(1.8rem,5vw,2.8rem);margin-bottom:var(--s3)}
-.resist h2 .strike{text-decoration:line-through;text-decoration-color:var(--danger);text-decoration-thickness:3px;color:var(--text-dim)}
 .resist h2 .fix{color:var(--gold)}
 .resist .lede{font-size:1.1rem;color:var(--text-muted)}
-.ohm{font-family:var(--mono);color:var(--copper)}
 
 /* ============================================================ CTA */
 .bridge{border-top:1px solid var(--border);background:var(--bg-2);padding:var(--s8) 0}
