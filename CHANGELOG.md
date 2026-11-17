@@ -7,12 +7,14 @@ https://www.it-help.tech/corrections/, and the page links its own entry from its
 This file begins with the entry below. Earlier changes are in this repository's history. Newest first.
 Each heading gives the day in UTC, and the day in Los Angeles where the two differ.
 
-## 16 November 2026 (UTC; 15 November in Los Angeles): narrow screens
+## 17 November 2026: narrow screens
 
-The page no longer scrolls sideways on a phone or a tablet. Measured in Chromium before this change, the
-document was 399 px wide in a window 320, 375 or 390 px wide, and 803 px wide in a window 684 to 800 px wide
-(eight widths measured). After it, the document is exactly as wide as the window at each of 68 widths from
-320 to 1920 px.
+In Chromium, the page no longer scrolls sideways at phone or tablet widths. Chromium is the one engine
+these numbers come from: see the last paragraph.
+
+Before this change the document was 399 px wide in every window narrower than that (measured at 320, 375,
+390 and 398 px) and 803 px wide in a window 681 to 802 px wide. After the change, the document is exactly
+as wide as its window at each of 68 widths from 320 to 1920 px.
 
 Everything that changed is in the page's one style block:
 
@@ -32,7 +34,9 @@ block's hash changed with the block and is pinned again in the page's own policy
 header policy. This is recorded here and not in the corrections index because nothing a reader was told
 changed.
 
-The measurements are from Chromium 141 and Chrome 157. Safari was not measured.
+The measurements are from Chromium 141 and Chrome 157 on macOS. Safari was not measured for this change.
+Every browser on an iPhone runs Safari's engine, so nothing here says the change is verified on an
+iPhone.
 
 ## 16 November 2026 (UTC; 15 November in Los Angeles)
 
