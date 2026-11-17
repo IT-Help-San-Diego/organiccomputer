@@ -7,6 +7,27 @@ https://www.it-help.tech/corrections/, and the page links its own entry from its
 This file begins with the entry below. Earlier changes are in this repository's history. Newest first.
 Each heading gives the day in UTC, and the day in Los Angeles where the two differ.
 
+## 17 November 2026: two sentences repunctuated, and the license note names the drawings
+
+Two sentences on the site changed their punctuation and nothing else.
+
+- On the page and in `llms-full.txt`, the sentence about a line with no resistor at its end had a spaced
+  hyphen after "more signal". It now reads: "And a line with no resistor at its end doesn't carry more
+  signal. It rings: the wave reflects, returns over what is still arriving, and the receiver cannot tell
+  the message from its own echo."
+- On the page shown for a missing address, the sentence about an unchecked signal had a long dash after
+  "echo". It now reads: "An unchecked signal can return as its own echo. Let's get you back to signal."
+
+Why: the site's own words carry no long dash, and no spaced hyphen standing in for one. The substitute
+is a full stop, a colon, a comma or parentheses.
+
+`LICENSE.txt` already said that the license does not cover the drawings and marks. It now names them: the
+drawings written into `index.html` as inline SVG, and the files `favicon.svg` and `bimi-logo.svg`.
+
+No claim changed, so this is recorded here and not as a new entry in the corrections index. The index's
+entry for this site, C-20261115-03, quotes both sentences; the change to its quotations is recorded in
+that entry, with the earlier punctuation.
+
 ## 17 November 2026: narrow screens
 
 In Chromium, the page no longer scrolls sideways at phone or tablet widths. The numbers in this entry are

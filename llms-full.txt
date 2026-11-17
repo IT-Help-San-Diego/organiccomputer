@@ -102,7 +102,7 @@ drops the voltage to something that won't burn the system down. Thinking has the
 same shape. Friction, doubt, and the deliberate pause before the answer are not
 the obstacle. They are the work.
 
-And a line with no resistor at its end doesn't carry more signal - it rings: the
+And a line with no resistor at its end doesn't carry more signal. It rings: the
 wave reflects, returns over what is still arriving, and the receiver cannot tell
 the message from its own echo. That is what a mind does with its own prior when
 nothing stops it.
