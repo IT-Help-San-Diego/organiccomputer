@@ -9,8 +9,8 @@ Each heading gives the day in UTC, and the day in Los Angeles where the two diff
 
 ## 17 November 2026: narrow screens
 
-In Chromium, the page no longer scrolls sideways at phone or tablet widths. Chromium is the one engine
-these numbers come from: see the last paragraph.
+In Chromium, the page no longer scrolls sideways at phone or tablet widths. The numbers in this entry are
+Chromium's, except in the last paragraph, which says what was measured in Safari and what was not.
 
 Before this change the document was 399 px wide in every window narrower than that (measured at 320, 375,
 390 and 398 px) and 803 px wide in a window 681 to 802 px wide. After the change, the document is exactly
@@ -34,9 +34,11 @@ block's hash changed with the block and is pinned again in the page's own policy
 header policy. This is recorded here and not in the corrections index because nothing a reader was told
 changed.
 
-The measurements are from Chromium 141 and Chrome 157 on macOS. Safari was not measured for this change.
-Every browser on an iPhone runs Safari's engine, so nothing here says the change is verified on an
-iPhone.
+The numbers above are from Chromium 141 and Chrome 157 on macOS. Mobile Safari was measured separately,
+before the merge, in the iOS Simulator (iOS 27.0), by comparing a frame of the page at rest with a frame
+after a push to the left. In a window 375 points wide the page moved 24 px sideways before this change
+and did not move with it. Not measured: a real iPhone, any tablet width in Safari, Safari on a Mac, and
+a phone turned on its side.
 
 ## 16 November 2026 (UTC; 15 November in Los Angeles)
 
