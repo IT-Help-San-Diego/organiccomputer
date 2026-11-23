@@ -7,6 +7,16 @@ https://www.it-help.tech/corrections/, and the page links its own entry from its
 This file begins with the entry below. Earlier changes are in this repository's history. Newest first.
 Each heading gives the day in UTC, and the day in Los Angeles where the two differ.
 
+## 23 November 2026: the Tetrasemaphore link carries the DOI of the latest version
+
+The family link to the Tetrasemaphore on the page, in `llms.txt` and in `llms-full.txt` showed the 1.0.0
+version DOI, 10.5281/zenodo.23575816. It now shows 10.5281/zenodo.23575814, the concept DOI, which always
+resolves to the latest version.
+
+Why: Tetrasemaphore releases now follow one another, and a version DOI goes stale with each; the concept DOI
+does not. No claim changed, so this is recorded here and not in the corrections index. The style block and
+the response headers are unchanged.
+
 ## 17 November 2026: two sentences repunctuated, and the license note names the drawings
 
 Two sentences on the site changed their punctuation, with the capital letter that follows it, and nothing
