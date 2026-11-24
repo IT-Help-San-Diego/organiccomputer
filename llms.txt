@@ -19,7 +19,7 @@ as the operator.
 - [IT Help San Diego Inc.](https://www.it-help.tech): the operator.
 - [DNS Tool](https://dnstool.it-help.tech/) — the deployed OSINT DNS/email-security analyzer (DOI 10.5281/zenodo.19468134).
 - [Calibration Scope](https://calibrationscope.com/) — measures reasoning in any subject, on any substrate.
-- [Tetrasemaphore](https://tetrasemaphore.systems/) — DOI 10.5281/zenodo.23575816.
+- [Tetrasemaphore](https://tetrasemaphore.systems/) — DOI 10.5281/zenodo.23575814.
 - [Intellectual Resistance](https://intellectualresistance.com/) — the umbrella.
 
 ## License

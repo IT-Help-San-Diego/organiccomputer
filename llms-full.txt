@@ -92,7 +92,7 @@ The same method, deployed — every figure sealed and re-derivable:
 
 - DNS Tool: https://dnstool.it-help.tech — DOI 10.5281/zenodo.19468134
 - Calibration Scope: https://calibrationscope.com — measures carbon and silicon
-- Tetrasemaphore: https://tetrasemaphore.systems — DOI 10.5281/zenodo.23575816
+- Tetrasemaphore: https://tetrasemaphore.systems — DOI 10.5281/zenodo.23575814
 - Intellectual Resistance: https://intellectualresistance.com — the umbrella
 
 ## The Intellectual Resistance
